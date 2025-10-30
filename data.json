@@ -1,0 +1,14 @@
+[
+   {
+    "name" : "camiseta blanca" ,
+    "price" :"9,90€"
+} ,
+{
+    "name" : "camiseta negra" ,
+    "price" :"9,90€"
+},
+{
+    "name" : "pantalon vaquero" ,
+    "price" :"19,90€"
+} 
+]
