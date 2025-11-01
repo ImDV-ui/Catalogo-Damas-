@@ -1,17 +1,18 @@
 
+// ---- Currency formatter ----
 const fmtEUR = (n) => new Intl.NumberFormat('es-ES',{style:'currency', currency:'EUR'}).format(n);
 
-// ---------- STATE ----------
+// ---- State ----
 const state = {
   products: [],
   filtered: [],
   category: 'all',
   search: '',
   sort: 'name-asc',
-  cart: {} // {id: { ...product, qty }}
+  cart: {}
 };
 
-// ---------- ELEMENTS ----------
+// ---- Elements ----
 const els = {
   grid: document.getElementById('grid'),
   category: document.getElementById('category'),
@@ -20,7 +21,6 @@ const els = {
   year: document.getElementById('year'),
   toTop: document.getElementById('toTop'),
   newsGrid: document.getElementById('newsGrid'),
-  // cart
   cartBtn: document.getElementById('cartBtn'),
   cartCount: document.getElementById('cartCount'),
   drawer: document.getElementById('drawer'),
@@ -32,63 +32,51 @@ const els = {
   checkout: document.getElementById('checkout'),
 };
 
-els.year.textContent = new Date().getFullYear();
-els.toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
+if(els.year) els.year.textContent = new Date().getFullYear();
+if(els.toTop) els.toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
 
-// ---------- LOAD DATA ----------
+// ---- Load data (fetch + fallback) ----
+fetch('data/products.json')
+  .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(data => {
+    if(!Array.isArray(data) || !data.length) {
+      console.warn('[DAMAS] JSON vacío; usando datos de ejemplo.');
+      data = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
+    } else {
+      console.info('[DAMAS] Catálogo cargado correctamente.');
+    }
+    state.products = data.map((p,i) => ({ id: p.id || String(i+1), ...p }));
+    hydrateCategoryFilter(state.products);
+    loadCart(); renderCart();
+    hydrateNews();
+    applyFilters();
+  })
+  .catch(err => {
+    console.error('[DAMAS] No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.');
+    state.products = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
+    hydrateCategoryFilter(state.products);
+    loadCart(); renderCart();
+    hydrateNews();
+    applyFilters();
+  });
 
-  b.style.background = type==='error' ? '#fee2e2' : '#fef9c3';
-  b.style.color = '#111827';
-  b.textContent = msg;
-}
-
-Promise.all([
-  fetch('data/products.json')
-    .then(r => {
-      if(!r.ok) throw new Error('HTTP '+r.status);
-      return r.json();
-    })
-]).then(([data]) => {
-  if(!Array.isArray(data) || !data.length){
-    console.warn('[DAMAS] JSON cargado pero vacío. Usando datos de ejemplo.');
-    data = [{"id": "f001", "name": "Pringles Original", "price": 2.1, "image": "https://picsum.photos/seed/pringles-fallback/800/600", "category": "snacks", "tags": "pringles patatas original"}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://picsum.photos/seed/doritos-fallback/800/600", "category": "snacks", "tags": "doritos"}, {"id": "f020", "name": "Prime Tropical Punch", "price": 2.9, "image": "https://picsum.photos/seed/prime-fallback/800/600", "category": "bebidas", "tags": "prime energy tropical"}, {"id": "f030", "name": "Kinder Bueno", "price": 1.6, "image": "https://picsum.photos/seed/kinder-fallback/800/600", "category": "chocolates", "tags": "kinder bueno"}];
-  } else {
-    console.info('[DAMAS] Catálogo cargado correctamente.');
-  }
-
-  state.products = data.map((p, i) => ({ id: p.id || String(i+1), ...p }));
-  hydrateCategoryFilter(state.products);
-  loadCart();
-  renderCart();
-  hydrateNews();
-  applyFilters();
-}).catch(err => { console.error('[DAMAS] No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.');
-  console.error('Error cargando JSON', err);
-  // Fallback a datos de ejemplo
-  state.products = [{"id": "f001", "name": "Pringles Original", "price": 2.1, "image": "https://picsum.photos/seed/pringles-fallback/800/600", "category": "snacks", "tags": "pringles patatas original"}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://picsum.photos/seed/doritos-fallback/800/600", "category": "snacks", "tags": "doritos"}, {"id": "f020", "name": "Prime Tropical Punch", "price": 2.9, "image": "https://picsum.photos/seed/prime-fallback/800/600", "category": "bebidas", "tags": "prime energy tropical"}, {"id": "f030", "name": "Kinder Bueno", "price": 1.6, "image": "https://picsum.photos/seed/kinder-fallback/800/600", "category": "chocolates", "tags": "kinder bueno"}];
-  hydrateCategoryFilter(state.products);
-  renderCart();
-  hydrateNews();
-  applyFilters();
-});
-
+// ---- Helpers ----
 function hydrateCategoryFilter(items){
+  if(!els.category) return;
   const cats = Array.from(new Set(items.map(i => i.category))).sort();
+  els.category.innerHTML = '<option value="all">Todas las categorías</option>';
   cats.forEach(cat => {
     const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+    opt.value = cat; opt.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     els.category.appendChild(opt);
   });
 }
 
 function hydrateNews(){
+  if(!els.newsGrid) return;
   const news = state.products.filter(p => p.isNew).slice(0,3);
   els.newsGrid.innerHTML = '';
-  if(!news.length){
-    els.newsGrid.innerHTML = '<p>Pronto publicaremos novedades.</p>';
-    return;
-  }
+  if(!news.length) return;
   const frag = document.createDocumentFragment();
   news.forEach(n => {
     const card = document.createElement('article');
@@ -101,64 +89,49 @@ function hydrateNews(){
         <p class="muted">${n.desc || ''}</p>
         <div><strong>${fmtEUR(n.price)}</strong></div>
         <button class="btn" data-id="${n.id}">Añadir</button>
-      </div>
-    `;
+      </div>`;
     card.querySelector('.btn').addEventListener('click', () => addToCart(n.id));
     frag.appendChild(card);
   });
   els.newsGrid.appendChild(frag);
 }
 
-// ---------- EVENTS ----------
-els.category.addEventListener('change', () => { state.category = els.category.value; applyFilters(); });
-els.search.addEventListener('input', () => { state.search = els.search.value; applyFilters(); });
-els.sort.addEventListener('change', () => { state.sort = els.sort.value; applyFilters(); });
+// ---- Events ----
+if(els.category) els.category.addEventListener('change', () => { state.category = els.category.value; applyFilters(); });
+if(els.search) els.search.addEventListener('input', () => { state.search = els.search.value; applyFilters(); });
+if(els.sort) els.sort.addEventListener('change', () => { state.sort = els.sort.value; applyFilters(); });
 
-// Drawer open/close
-els.cartBtn.addEventListener('click', openDrawer);
-els.drawerClose.addEventListener('click', closeDrawer);
-els.overlay.addEventListener('click', closeDrawer);
+if(els.cartBtn) els.cartBtn.addEventListener('click', openDrawer);
+if(els.drawerClose) els.drawerClose.addEventListener('click', closeDrawer);
+if(els.overlay) els.overlay.addEventListener('click', closeDrawer);
 
-function openDrawer(){ els.drawer.classList.add('open'); els.overlay.hidden = false; els.drawer.setAttribute('aria-hidden','false'); }
-function closeDrawer(){ els.drawer.classList.remove('open'); els.overlay.hidden = true; els.drawer.setAttribute('aria-hidden','true'); }
+function openDrawer(){ if(els.drawer){ els.drawer.classList.add('open'); if(els.overlay) els.overlay.hidden = false; els.drawer.setAttribute('aria-hidden','false'); } }
+function closeDrawer(){ if(els.drawer){ els.drawer.classList.remove('open'); if(els.overlay) els.overlay.hidden = true; els.drawer.setAttribute('aria-hidden','true'); } }
 
-// Cart actions
-els.clearCart.addEventListener('click', () => { state.cart = {}; saveCart(); renderCart(); });
-els.checkout.addEventListener('click', () => {
-  alert('Checkout de demostración. Integraremos método real más adelante.');
-});
+if(els.clearCart) els.clearCart.addEventListener('click', () => { state.cart = {}; saveCart(); renderCart(); });
+if(els.checkout) els.checkout.addEventListener('click', () => { alert('Checkout de demostración.'); });
 
-// ---------- FILTERING ----------
+// ---- Filtering ----
 function applyFilters(){
+  if(!els.grid) return;
   let list = [...state.products];
-
-  if(state.category !== 'all'){
-    list = list.filter(p => p.category === state.category);
-  }
-
-  const q = state.search.trim().toLowerCase();
-  if(q){
-    list = list.filter(p => (p.name + ' ' + (p.tags||'')).toLowerCase().includes(q));
-  }
-
+  if(state.category !== 'all') list = list.filter(p => p.category === state.category);
+  const q = (state.search||'').trim().toLowerCase();
+  if(q) list = list.filter(p => (p.name + ' ' + (p.tags||'')).toLowerCase().includes(q));
   const [field, dir] = state.sort.split('-');
   list.sort((a,b) => {
     if(field === 'name') return dir === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
     if(field === 'price') return dir === 'asc' ? a.price - b.price : b.price - a.price;
     return 0;
   });
-
   state.filtered = list;
   render();
 }
 
-// ---------- RENDER GRID ----------
+// ---- Render grid ----
 function render(){
   els.grid.innerHTML = '';
-  if(!state.filtered.length){
-    els.grid.innerHTML = '<p>No hay productos que coincidan.</p>';
-    return;
-  }
+  if(!state.filtered.length){ els.grid.innerHTML = '<p>No hay productos que coincidan.</p>'; return; }
   const frag = document.createDocumentFragment();
   state.filtered.forEach(p => frag.appendChild(card(p)));
   els.grid.appendChild(frag);
@@ -176,18 +149,14 @@ function card(p){
       </div>
       <h3 class="name">${p.name}</h3>
       <button class="add-btn" type="button" data-id="${p.id}">Añadir</button>
-    </div>
-  `;
+    </div>`;
   article.querySelector('.add-btn').addEventListener('click', () => addToCart(p.id));
   return article;
 }
 
-// ---------- CART ----------
+// ---- Cart ----
 function loadCart(){
-  try{
-    const raw = localStorage.getItem('damas_cart');
-    if(raw) state.cart = JSON.parse(raw) || {};
-  }catch(e){ state.cart = {}; }
+  try{ const raw = localStorage.getItem('damas_cart'); if(raw) state.cart = JSON.parse(raw) || {}; }catch(e){ state.cart = {}; }
   updateCount();
 }
 function saveCart(){
@@ -195,6 +164,7 @@ function saveCart(){
   updateCount();
 }
 function updateCount(){
+  if(!els.cartCount) return;
   const count = Object.values(state.cart).reduce((a, it) => a + it.qty, 0);
   els.cartCount.textContent = String(count);
 }
@@ -203,29 +173,21 @@ function addToCart(id){
   if(!prod) return;
   if(!state.cart[id]) state.cart[id] = { ...prod, qty: 0 };
   state.cart[id].qty++;
-  saveCart();
-  renderCart();
-  openDrawer();
+  saveCart(); renderCart(); openDrawer();
 }
 function changeQty(id, delta){
   if(!state.cart[id]) return;
   state.cart[id].qty += delta;
   if(state.cart[id].qty <= 0) delete state.cart[id];
-  saveCart();
-  renderCart();
+  saveCart(); renderCart();
 }
 function removeItem(id){
-  delete state.cart[id];
-  saveCart();
-  renderCart();
+  delete state.cart[id]; saveCart(); renderCart();
 }
 function renderCart(){
+  if(!els.cartItems || !els.cartTotal) return;
   const items = Object.values(state.cart);
-  if(!items.length){
-    els.cartItems.innerHTML = '<p>Tu carrito está vacío.</p>';
-    els.cartTotal.textContent = fmtEUR(0);
-    return;
-  }
+  if(!items.length){ els.cartItems.innerHTML = '<p>Tu carrito está vacío.</p>'; els.cartTotal.textContent = fmtEUR(0); return; }
   els.cartItems.innerHTML = '';
   const frag = document.createDocumentFragment();
   let total = 0;
@@ -244,8 +206,7 @@ function renderCart(){
         <button aria-label="Disminuir">−</button>
         <strong>${it.qty}</strong>
         <button aria-label="Aumentar">+</button>
-      </div>
-    `;
+      </div>`;
     const [minus, plus] = row.querySelectorAll('.qty button');
     const rm = row.querySelector('.rm-btn');
     minus.addEventListener('click', () => changeQty(it.id, -1));
