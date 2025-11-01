@@ -11,7 +11,7 @@
     "id": "p002",
     "name": "Pringles Sour Cream & Onion",
     "price": 2.3,
-    "image": "https://picsum.photos/seed/pringles-sour/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg",
     "category": "snacks",
     "tags": "pringles sour cream onion",
     "isNew": true,
@@ -29,7 +29,7 @@
     "id": "p010",
     "name": "Doritos Tex-Mex",
     "price": 1.8,
-    "image": "https://picsum.photos/seed/doritos-texmex/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg",
     "category": "snacks",
     "tags": "doritos maiz tex mex",
     "isNew": true,
@@ -39,7 +39,7 @@
     "id": "p011",
     "name": "Taquis Fuego",
     "price": 2.2,
-    "image": "https://picsum.photos/seed/taquis-fuego/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Takis_fuego.jpg",
     "category": "snacks",
     "tags": "taquis fuego picante"
   },
@@ -47,7 +47,7 @@
     "id": "p020",
     "name": "Prime Tropical Punch",
     "price": 2.9,
-    "image": "https://picsum.photos/seed/prime-tropical/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Prime_tropical_punch.jpg",
     "category": "bebidas",
     "tags": "prime energy tropical punch"
   },
@@ -55,7 +55,7 @@
     "id": "p021",
     "name": "Monster Mango Loco",
     "price": 2.4,
-    "image": "https://picsum.photos/seed/monster-mango/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Monster_Mango_Loco.jpg",
     "category": "bebidas",
     "tags": "monster energy mango loco"
   },
@@ -63,7 +63,7 @@
     "id": "p022",
     "name": "Red Bull 250ml",
     "price": 2.1,
-    "image": "https://picsum.photos/seed/redbull/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg",
     "category": "bebidas",
     "tags": "red bull energy",
     "isNew": true,
@@ -73,7 +73,7 @@
     "id": "p023",
     "name": "Fanta Uva (JP)",
     "price": 2.6,
-    "image": "https://picsum.photos/seed/fanta-grape/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fanta_grape_325ml_can-front_PNr%25C2%25B00882.jpg",
     "category": "bebidas",
     "tags": "fanta grape japan japonesa"
   },
@@ -81,7 +81,7 @@
     "id": "p030",
     "name": "Kinder Bueno",
     "price": 1.6,
-    "image": "https://picsum.photos/seed/kinder-bueno/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kinder_Bueno_-_2_unwrapped_top.jpg",
     "category": "chocolates",
     "tags": "kinder bueno"
   },
@@ -89,7 +89,7 @@
     "id": "p031",
     "name": "Kinder Maxi",
     "price": 1.4,
-    "image": "https://picsum.photos/seed/kinder-maxi/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kinder_Maxi.jpg",
     "category": "chocolates",
     "tags": "kinder maxi"
   },
@@ -97,7 +97,7 @@
     "id": "p032",
     "name": "Milka Oreo",
     "price": 1.95,
-    "image": "https://picsum.photos/seed/milka-oreo/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Auseinandergenommen_Oreo-Milka_1.jpg",
     "category": "chocolates",
     "tags": "milka oreo chocolate"
   },
@@ -105,7 +105,7 @@
     "id": "p033",
     "name": "Twix Xtra",
     "price": 1.7,
-    "image": "https://picsum.photos/seed/twix-xtra/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Twix-broken.jpg",
     "category": "chocolates",
     "tags": "twix xtra bar"
   },
@@ -113,7 +113,7 @@
     "id": "p040",
     "name": "Bolsa Mix Chuches (M)",
     "price": 3.5,
-    "image": "https://picsum.photos/seed/bolsa-mix/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BonBon_Hurlumhej_Mix.png",
     "category": "chuches",
     "tags": "bolsa chuches mix"
   },
@@ -121,7 +121,7 @@
     "id": "p041",
     "name": "Cesta Mini Damas",
     "price": 9.9,
-    "image": "https://picsum.photos/seed/cesta-mini/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_pralines_in_box.jpg",
     "category": "chuches",
     "tags": "cesta regalo chuches"
   },
@@ -129,7 +129,7 @@
     "id": "p042",
     "name": "Tarta de Chuches (Pequeña)",
     "price": 12.0,
-    "image": "https://picsum.photos/seed/tarta-chuches/800/600",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sweetness_overload_with_jelly_candy_cake_%2840821300534%29.jpg",
     "category": "chuches",
     "tags": "tarta chuches cumpleaños"
   },
