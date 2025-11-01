@@ -36,18 +36,52 @@ els.year.textContent = new Date().getFullYear();
 els.toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
 
 // ---------- LOAD DATA ----------
+
+// --- Banner de estado ---
+function showBanner(msg, type='warn'){
+  let b = document.getElementById('statusBanner');
+  if(!b){
+    b = document.createElement('div');
+    b.id = 'statusBanner';
+    b.style.position='sticky'; b.style.top='0'; b.style.zIndex='30';
+    b.style.padding='10px 14px'; b.style.margin='0 0 10px';
+    b.style.borderRadius='12px'; b.style.fontWeight='700';
+    b.style.width='min(1100px,92vw)'; b.style.marginInline='auto';
+    document.body.prepend(b);
+  }
+  b.style.background = type==='error' ? '#fee2e2' : '#fef9c3';
+  b.style.color = '#111827';
+  b.textContent = msg;
+}
+
 Promise.all([
-  fetch('data/products.json').then(r => r.json())
+  fetch('data/products.json')
+    .then(r => {
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      return r.json();
+    })
 ]).then(([data]) => {
+  if(!Array.isArray(data) || !data.length){
+    showBanner('JSON cargado pero vacío. Usando datos de ejemplo.', 'warn');
+    data = [{"id": "f001", "name": "Pringles Original", "price": 2.1, "image": "https://picsum.photos/seed/pringles-fallback/800/600", "category": "snacks", "tags": "pringles patatas original"}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://picsum.photos/seed/doritos-fallback/800/600", "category": "snacks", "tags": "doritos"}, {"id": "f020", "name": "Prime Tropical Punch", "price": 2.9, "image": "https://picsum.photos/seed/prime-fallback/800/600", "category": "bebidas", "tags": "prime energy tropical"}, {"id": "f030", "name": "Kinder Bueno", "price": 1.6, "image": "https://picsum.photos/seed/kinder-fallback/800/600", "category": "chocolates", "tags": "kinder bueno"}];
+  } else {
+    showBanner('Catálogo cargado correctamente.');
+  }
+
   state.products = data.map((p, i) => ({ id: p.id || String(i+1), ...p }));
   hydrateCategoryFilter(state.products);
   loadCart();
   renderCart();
   hydrateNews();
   applyFilters();
-}).catch(err => {
+}).catch(err => { showBanner('No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.', 'error');
   console.error('Error cargando JSON', err);
-  els.grid.innerHTML = '<p>No se pudo cargar el catálogo.</p>';
+  // Fallback a datos de ejemplo
+  state.products = [{"id": "f001", "name": "Pringles Original", "price": 2.1, "image": "https://picsum.photos/seed/pringles-fallback/800/600", "category": "snacks", "tags": "pringles patatas original"}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://picsum.photos/seed/doritos-fallback/800/600", "category": "snacks", "tags": "doritos"}, {"id": "f020", "name": "Prime Tropical Punch", "price": 2.9, "image": "https://picsum.photos/seed/prime-fallback/800/600", "category": "bebidas", "tags": "prime energy tropical"}, {"id": "f030", "name": "Kinder Bueno", "price": 1.6, "image": "https://picsum.photos/seed/kinder-fallback/800/600", "category": "chocolates", "tags": "kinder bueno"}];
+  hydrateCategoryFilter(state.products);
+  renderCart();
+  hydrateNews();
+  applyFilters();
 });
 
 function hydrateCategoryFilter(items){
