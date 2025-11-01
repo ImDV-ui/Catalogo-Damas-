@@ -47,6 +47,7 @@ fetch('data/products.json')
     }
     state.products = data.map((p,i) => ({ id: p.id || String(i+1), ...p }));
     hydrateCategoryFilter(state.products);
+    renderChips(state.products);
     loadCart(); renderCart();
     hydrateNews();
     applyFilters();
@@ -55,6 +56,7 @@ fetch('data/products.json')
     console.error('[DAMAS] No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.');
     state.products = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
     hydrateCategoryFilter(state.products);
+    renderChips(state.products);
     loadCart(); renderCart();
     hydrateNews();
     applyFilters();
@@ -70,6 +72,27 @@ function hydrateCategoryFilter(items){
     opt.value = cat; opt.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     els.category.appendChild(opt);
   });
+
+function renderChips(items){
+  const host = document.getElementById('catChips');
+  if(!host) return;
+  const cats = Array.from(new Set(items.map(i => i.category))).sort();
+  host.innerHTML = '';
+
+  const all = document.createElement('button');
+  all.className = 'chip' + (state.category === 'all' ? ' active' : '');
+  all.dataset.cat = 'all';
+  all.textContent = 'Todas';
+  host.appendChild(all);
+
+  cats.forEach(cat => {
+    const b = document.createElement('button');
+    b.className = 'chip' + (state.category === cat ? ' active' : '');
+    b.dataset.cat = cat;
+    b.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+    host.appendChild(b);
+  });
+}
 }
 
 function hydrateNews(){
@@ -97,7 +120,7 @@ function hydrateNews(){
 }
 
 // ---- Events ----
-if(els.category) els.category.addEventListener('change', () => { state.category = els.category.value; applyFilters(); });
+if(els.category) els.category.addEventListener('change', () => { state.category = els.category.value; renderChips(state.products); applyFilters(); });
 if(els.search) els.search.addEventListener('input', () => { state.search = els.search.value; applyFilters(); });
 if(els.sort) els.sort.addEventListener('change', () => { state.sort = els.sort.value; applyFilters(); });
 
@@ -217,3 +240,23 @@ function renderCart(){
   els.cartItems.appendChild(frag);
   els.cartTotal.textContent = fmtEUR(total);
 }
+
+
+document.addEventListener('click', (e) => {
+  if (e.target.matches('.badge')) {
+    const cat = e.target.textContent.trim();
+    state.category = cat;
+    if (els.category) els.category.value = cat;
+    renderChips(state.products);
+    applyFilters();
+    document.getElementById('grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  if (e.target.matches('.chip')) {
+    const cat = e.target.dataset.cat;
+    state.category = cat;
+    if (els.category) els.category.value = cat;
+    renderChips(state.products);
+    applyFilters();
+    document.getElementById('grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+});
