@@ -17,13 +17,19 @@
 <body>
   <div class="bg-overlay"></div>
 
-  <header class="container">
+    <header class="container topbar">
     <div class="brand">
       <img src="assets/logo.png" alt="Damas logo" class="logo" />
       <div class="titles">
         <h1>DAMAS</h1>
         <p>Chuches, bebidas y mucho más</p>
       </div>
+    </div>
+    <div class="actions">
+      <button id="cartBtn" class="cart-btn" aria-label="Abrir carrito" title="Carrito">
+        <span class="cart-icon" aria-hidden="true">🛒</span>
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
     </div>
     <nav class="controls">
       <input id="search" type="search" placeholder="Buscar producto..." aria-label="Buscar producto" />
@@ -40,6 +46,21 @@
   </header>
 
   <main class="container">
+    <section id="news" class="highlight">
+      <h2>Novedades</h2>
+      <div id="newsGrid" class="news-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="promo" class="promo">
+      <div class="promo-card">
+        <div class="promo-body">
+          <h3>🎉 Sorteo mensual</h3>
+          <p>Síguenos en Instagram y participa para ganar una <strong>cesta de chuches</strong>. Publicamos el ganador el último viernes del mes.</p>
+          <a class="btn" href="#" aria-disabled="true">Próximamente</a>
+        </div>
+      </div>
+    </section>
+
     <section id="grid" class="grid" aria-live="polite">
       <!-- Tarjetas de productos generadas por JS -->
     </section>
@@ -51,5 +72,23 @@
   </footer>
 
   <script src="app.js" defer></script>
+
+  <!-- Drawer Carrito -->
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-label="Carrito">
+    <header class="drawer-head">
+      <h2>Tu carrito</h2>
+      <button id="drawerClose" class="icon-btn" aria-label="Cerrar">✕</button>
+    </header>
+    <div id="cartItems" class="drawer-body"></div>
+    <footer class="drawer-foot">
+      <div class="total"><span>Total:</span><strong id="cartTotal">0,00 €</strong></div>
+      <div class="drawer-actions">
+        <button id="clearCart" class="btn ghost">Vaciar</button>
+        <button id="checkout" class="btn">Finalizar (demo)</button>
+      </div>
+    </footer>
+  </aside>
+
 </body>
 </html>

@@ -1,40 +1,140 @@
 [
   {
-    "name": "Gel Mega Ácido",
-    "price": 1.2,
-    "image": "https://picsum.photos/seed/gelacido/800/600",
-    "category": "chicles",
-    "tags": "gel mega acido sour"
-  },
-  {
-    "name": "Pocky Fresa",
-    "price": 1.9,
-    "image": "https://picsum.photos/seed/pocky-fresa/800/600",
-    "category": "snacks",
-    "tags": "pocky strawberry"
-  },
-  {
-    "name": "Filipinos Crispy Bites",
-    "price": 2.3,
-    "image": "https://picsum.photos/seed/filicrispy/800/600",
-    "category": "galletas",
-    "tags": "filipinos crispy bites"
-  },
-  {
-    "name": "Filipinos Salted Caramel",
+    "id": "p001",
+    "name": "Pringles Original",
     "price": 2.1,
-    "image": "https://picsum.photos/seed/filisalt/800/600",
-    "category": "galletas",
-    "tags": "filipinos caramel"
+    "image": "https://picsum.photos/seed/pringles-original/800/600",
+    "category": "snacks",
+    "tags": "pringles patatas original"
   },
   {
-    "name": "Oreo Crema Cacahuete",
+    "id": "p002",
+    "name": "Pringles Sour Cream & Onion",
+    "price": 2.3,
+    "image": "https://picsum.photos/seed/pringles-sour/800/600",
+    "category": "snacks",
+    "tags": "pringles sour cream onion",
+    "isNew": true,
+    "desc": "Sabor crema agria y cebolla"
+  },
+  {
+    "id": "p003",
+    "name": "Pringles BBQ",
+    "price": 2.3,
+    "image": "https://picsum.photos/seed/pringles-bbq/800/600",
+    "category": "snacks",
+    "tags": "pringles barbacoa bbq"
+  },
+  {
+    "id": "p010",
+    "name": "Doritos Tex-Mex",
+    "price": 1.8,
+    "image": "https://picsum.photos/seed/doritos-texmex/800/600",
+    "category": "snacks",
+    "tags": "doritos maiz tex mex",
+    "isNew": true,
+    "desc": "Crujientes y sabrosos con toque picante"
+  },
+  {
+    "id": "p011",
+    "name": "Taquis Fuego",
+    "price": 2.2,
+    "image": "https://picsum.photos/seed/taquis-fuego/800/600",
+    "category": "snacks",
+    "tags": "taquis fuego picante"
+  },
+  {
+    "id": "p020",
+    "name": "Prime Tropical Punch",
+    "price": 2.9,
+    "image": "https://picsum.photos/seed/prime-tropical/800/600",
+    "category": "bebidas",
+    "tags": "prime energy tropical punch"
+  },
+  {
+    "id": "p021",
+    "name": "Monster Mango Loco",
+    "price": 2.4,
+    "image": "https://picsum.photos/seed/monster-mango/800/600",
+    "category": "bebidas",
+    "tags": "monster energy mango loco"
+  },
+  {
+    "id": "p022",
+    "name": "Red Bull 250ml",
+    "price": 2.1,
+    "image": "https://picsum.photos/seed/redbull/800/600",
+    "category": "bebidas",
+    "tags": "red bull energy",
+    "isNew": true,
+    "desc": "Clásico energy de 250 ml"
+  },
+  {
+    "id": "p023",
+    "name": "Fanta Uva (JP)",
     "price": 2.6,
-    "image": "https://picsum.photos/seed/oreopeanut/800/600",
-    "category": "galletas",
-    "tags": "oreo peanut butter"
+    "image": "https://picsum.photos/seed/fanta-grape/800/600",
+    "category": "bebidas",
+    "tags": "fanta grape japan japonesa"
   },
   {
+    "id": "p030",
+    "name": "Kinder Bueno",
+    "price": 1.6,
+    "image": "https://picsum.photos/seed/kinder-bueno/800/600",
+    "category": "chocolates",
+    "tags": "kinder bueno"
+  },
+  {
+    "id": "p031",
+    "name": "Kinder Maxi",
+    "price": 1.4,
+    "image": "https://picsum.photos/seed/kinder-maxi/800/600",
+    "category": "chocolates",
+    "tags": "kinder maxi"
+  },
+  {
+    "id": "p032",
+    "name": "Milka Oreo",
+    "price": 1.95,
+    "image": "https://picsum.photos/seed/milka-oreo/800/600",
+    "category": "chocolates",
+    "tags": "milka oreo chocolate"
+  },
+  {
+    "id": "p033",
+    "name": "Twix Xtra",
+    "price": 1.7,
+    "image": "https://picsum.photos/seed/twix-xtra/800/600",
+    "category": "chocolates",
+    "tags": "twix xtra bar"
+  },
+  {
+    "id": "p040",
+    "name": "Bolsa Mix Chuches (M)",
+    "price": 3.5,
+    "image": "https://picsum.photos/seed/bolsa-mix/800/600",
+    "category": "chuches",
+    "tags": "bolsa chuches mix"
+  },
+  {
+    "id": "p041",
+    "name": "Cesta Mini Damas",
+    "price": 9.9,
+    "image": "https://picsum.photos/seed/cesta-mini/800/600",
+    "category": "chuches",
+    "tags": "cesta regalo chuches"
+  },
+  {
+    "id": "p042",
+    "name": "Tarta de Chuches (Pequeña)",
+    "price": 12.0,
+    "image": "https://picsum.photos/seed/tarta-chuches/800/600",
+    "category": "chuches",
+    "tags": "tarta chuches cumpleaños"
+  },
+  {
+    "id": "p050",
     "name": "Oreo Space Dunk (Edición)",
     "price": 2.8,
     "image": "https://picsum.photos/seed/space-dunk/800/600",
@@ -42,6 +142,7 @@
     "tags": "oreo limited edition"
   },
   {
+    "id": "p051",
     "name": "Gomitas Pelables (Peelable)",
     "price": 2.2,
     "image": "https://picsum.photos/seed/peelable/800/600",
@@ -49,31 +150,11 @@
     "tags": "peelable gummies"
   },
   {
-    "name": "Spicy Gummy Bear Picante",
-    "price": 1.3,
-    "image": "https://picsum.photos/seed/spicybear/800/600",
-    "category": "gominolas",
-    "tags": "spicy gummy bear"
-  },
-  {
-    "name": "Tanzamitos Dubai (Fini)",
-    "price": 1.5,
-    "image": "https://picsum.photos/seed/tanzamitos/800/600",
-    "category": "snacks",
-    "tags": "fini tanzamitos dubai"
-  },
-  {
+    "id": "p052",
     "name": "Waffle Kinder Bueno",
     "price": 4.5,
     "image": "https://picsum.photos/seed/waffle/800/600",
     "category": "dulces",
-    "tags": "waffle kinder bueno chocolate"
-  },
-  {
-    "name": "Bebida Coreana Melón",
-    "price": 2.4,
-    "image": "https://picsum.photos/seed/melon/800/600",
-    "category": "bebidas",
-    "tags": "korean drink melon"
+    "tags": "waffle kinder chocolate"
   }
 ]

@@ -25,16 +25,10 @@ body{
   position:fixed;
   inset:0;
   background:url('assets/bg.jpg') center/cover no-repeat fixed;
-  filter: saturate(110%) contrast(105%);
-  z-index:-2;
-}
-.bg-overlay::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.96));
   z-index:-1;
+  filter:saturate(115%) contrast(110%);
 }
+
 
 .container{
   width:min(1100px, 92vw);
@@ -134,3 +128,83 @@ header.container{
   header.container{ grid-template-columns: 1fr auto }
   .card{ grid-column: span 4 }
 }
+
+
+/* --- Topbar with actions --- */
+.topbar{
+  position:sticky; top:0; background:rgba(255,255,255,.85); backdrop-filter: blur(8px);
+  z-index:10; border-bottom:1px solid rgba(0,0,0,.06);
+  display:grid; grid-template-columns: 1fr auto; align-items:center; gap:1rem; padding: .75rem 0 0;
+}
+.actions{ display:flex; align-items:center; gap:.5rem; }
+.cart-btn{
+  display:inline-grid; place-items:center; position:relative;
+  width:44px; height:44px; border-radius:12px; border:0; background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.18);
+  cursor:pointer; font-size:20px;
+}
+.cart-count{
+  position:absolute; top:-6px; right:-6px; min-width:22px; height:22px; padding:0 6px;
+  border-radius:999px; background:var(--brand); color:#fff; font-size:.8rem; font-weight:800;
+  display:grid; place-items:center; box-shadow:0 0 0 3px #fff;
+}
+
+/* --- News / Novedades --- */
+.highlight{ padding-top: .5rem; }
+.highlight h2{ margin:.5rem 0 0.5rem;}
+.news-grid{
+  display:grid; grid-template-columns: repeat(12, 1fr); gap:1rem;
+}
+.news-card{
+  grid-column: span 12; background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,.10);
+  display:grid; grid-template-columns: 1fr; align-items:stretch;
+}
+.news-card img{ width:100%; aspect-ratio: 3/2; object-fit: cover; }
+.news-card .nb{ padding:1rem; display:grid; gap:.4rem }
+.news-card .nb h3{ margin:0 }
+@media (min-width: 960px){
+  .news-card{ grid-template-columns: 1.2fr 1fr }
+}
+@media (min-width: 620px){
+  .news-card{ grid-column: span 6 }
+}
+
+/* --- Promo / Sorteos --- */
+.promo{ margin: .5rem 0 1rem; }
+.promo-card{
+  background:linear-gradient(45deg, var(--brand), var(--brand-dark)); color:#fff; border-radius:20px;
+  box-shadow:0 16px 40px rgba(124,58,237,.35);
+}
+.promo-body{ padding:1.1rem; }
+.btn{
+  display:inline-block; border:0; background:#fff; color:var(--brand-dark);
+  padding:.6rem 1rem; border-radius:12px; font-weight:800; text-decoration:none; cursor:pointer;
+}
+.btn.ghost{
+  background:transparent; color:#fff; border:2px solid #fff;
+}
+
+/* --- Drawer carrito lateral --- */
+.overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,.3); z-index:40;
+}
+.drawer{
+  position:fixed; top:0; right:0; height:100%; width:min(420px, 92vw); background:#fff; z-index:50;
+  box-shadow: -24px 0 60px rgba(0,0,0,.3);
+  transform: translateX(100%); transition: transform .28s ease;
+  display:flex; flex-direction:column;
+}
+.drawer.open{ transform: translateX(0); }
+.drawer-head{ padding:1rem; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(0,0,0,.06) }
+.drawer-body{ padding:.75rem 1rem; overflow:auto; flex:1; display:grid; gap:.75rem }
+.drawer-foot{ padding:.75rem 1rem; border-top:1px solid rgba(0,0,0,.06); display:grid; gap:.6rem }
+.icon-btn{ border:0; background:#f1f5f9; border-radius:10px; padding:.4rem .55rem; cursor:pointer }
+.total{ display:flex; justify-content:space-between; align-items:center; font-size:1.1rem }
+.cart-row{ display:grid; grid-template-columns: 64px 1fr auto; gap:.6rem; align-items:center; background:#f8fafc; border-radius:14px; padding:.5rem }
+.cart-row img{ width:64px; height:64px; object-fit:cover; border-radius:12px }
+.qty{ display:flex; align-items:center; gap:.35rem }
+.qty button{ border:0; background:#e2e8f0; padding:.25rem .5rem; border-radius:8px; cursor:pointer }
+.price-sm{ font-weight:800; color:var(--brand-dark) }
+.rm-btn{ border:0; background:transparent; color:#ef4444; cursor:pointer }
+
+/* Controls spacing tweak under sticky topbar */
+.controls{ margin-top:.5rem }
