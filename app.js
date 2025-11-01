@@ -48,6 +48,7 @@ fetch('data/products.json')
     state.products = data.map((p,i) => ({ id: p.id || String(i+1), ...p }));
     hydrateCategoryFilter(state.products);
     renderChips(state.products);
+    renderChips(state.products);
     loadCart(); renderCart();
     hydrateNews();
     applyFilters();
@@ -56,6 +57,7 @@ fetch('data/products.json')
     console.error('[DAMAS] No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.');
     state.products = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
     hydrateCategoryFilter(state.products);
+    renderChips(state.products);
     renderChips(state.products);
     loadCart(); renderCart();
     hydrateNews();
