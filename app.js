@@ -1,5 +1,5 @@
 
-const € = (n) => new Intl.NumberFormat('es-ES',{style:'currency', currency:'EUR'}).format(n);
+const fmtEUR = (n) => new Intl.NumberFormat('es-ES',{style:'currency', currency:'EUR'}).format(n);
 
 // ---------- STATE ----------
 const state = {
@@ -111,7 +111,7 @@ function hydrateNews(){
         <span class="badge">${n.category}</span>
         <h3>${n.name}</h3>
         <p class="muted">${n.desc || ''}</p>
-        <div><strong>${€(n.price)}</strong></div>
+        <div><strong>${fmtEUR(n.price)}</strong></div>
         <button class="btn" data-id="${n.id}">Añadir</button>
       </div>
     `;
@@ -184,7 +184,7 @@ function card(p){
     <div class="body">
       <div class="meta">
         <span class="badge">${p.category}</span>
-        <span class="price">${€(p.price)}</span>
+        <span class="price">${fmtEUR(p.price)}</span>
       </div>
       <h3 class="name">${p.name}</h3>
       <button class="add-btn" type="button" data-id="${p.id}">Añadir</button>
@@ -235,7 +235,7 @@ function renderCart(){
   const items = Object.values(state.cart);
   if(!items.length){
     els.cartItems.innerHTML = '<p>Tu carrito está vacío.</p>';
-    els.cartTotal.textContent = €(0);
+    els.cartTotal.textContent = fmtEUR(0);
     return;
   }
   els.cartItems.innerHTML = '';
@@ -249,7 +249,7 @@ function renderCart(){
       <img src="${it.image}" alt="${it.name}">
       <div>
         <div class="name">${it.name}</div>
-        <div class="price-sm">${€(it.price)}</div>
+        <div class="price-sm">${fmtEUR(it.price)}</div>
         <button class="rm-btn" aria-label="Eliminar">Eliminar</button>
       </div>
       <div class="qty">
@@ -266,5 +266,5 @@ function renderCart(){
     frag.appendChild(row);
   });
   els.cartItems.appendChild(frag);
-  els.cartTotal.textContent = €(total);
+  els.cartTotal.textContent = fmtEUR(total);
 }
