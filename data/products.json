@@ -1,38 +1,24 @@
 [
   {
-    "name": "Waffle Kinder Bueno",
-    "price": 4.5,
-    "image": "https://picsum.photos/seed/waffle/800/600",
-    "category": "dulces",
-    "tags": "waffle kinder bueno chocolate"
-  },
-  {
-    "name": "Peelable Gummies",
-    "price": 2.2,
-    "image": "https://picsum.photos/seed/gummies/800/600",
-    "category": "gominolas",
-    "tags": "gummy peach peelable"
-  },
-  {
-    "name": "Tanzamitos Dubai (Fini)",
-    "price": 1.5,
-    "image": "https://picsum.photos/seed/tanzamitos/800/600",
-    "category": "snacks",
-    "tags": "fini tanzamitos dubai"
-  },
-  {
-    "name": "Oreo Space Dunk",
-    "price": 2.8,
-    "image": "https://picsum.photos/seed/oreo/800/600",
-    "category": "galletas",
-    "tags": "oreo limited edition"
+    "name": "Gel Mega Ácido",
+    "price": 1.2,
+    "image": "https://picsum.photos/seed/gelacido/800/600",
+    "category": "chicles",
+    "tags": "gel mega acido sour"
   },
   {
     "name": "Pocky Fresa",
     "price": 1.9,
-    "image": "https://picsum.photos/seed/pocky/800/600",
+    "image": "https://picsum.photos/seed/pocky-fresa/800/600",
     "category": "snacks",
     "tags": "pocky strawberry"
+  },
+  {
+    "name": "Filipinos Crispy Bites",
+    "price": 2.3,
+    "image": "https://picsum.photos/seed/filicrispy/800/600",
+    "category": "galletas",
+    "tags": "filipinos crispy bites"
   },
   {
     "name": "Filipinos Salted Caramel",
@@ -42,11 +28,46 @@
     "tags": "filipinos caramel"
   },
   {
-    "name": "Gomitas Picantes",
+    "name": "Oreo Crema Cacahuete",
+    "price": 2.6,
+    "image": "https://picsum.photos/seed/oreopeanut/800/600",
+    "category": "galletas",
+    "tags": "oreo peanut butter"
+  },
+  {
+    "name": "Oreo Space Dunk (Edición)",
+    "price": 2.8,
+    "image": "https://picsum.photos/seed/space-dunk/800/600",
+    "category": "galletas",
+    "tags": "oreo limited edition"
+  },
+  {
+    "name": "Gomitas Pelables (Peelable)",
+    "price": 2.2,
+    "image": "https://picsum.photos/seed/peelable/800/600",
+    "category": "gominolas",
+    "tags": "peelable gummies"
+  },
+  {
+    "name": "Spicy Gummy Bear Picante",
     "price": 1.3,
-    "image": "https://picsum.photos/seed/spicygummy/800/600",
+    "image": "https://picsum.photos/seed/spicybear/800/600",
     "category": "gominolas",
     "tags": "spicy gummy bear"
+  },
+  {
+    "name": "Tanzamitos Dubai (Fini)",
+    "price": 1.5,
+    "image": "https://picsum.photos/seed/tanzamitos/800/600",
+    "category": "snacks",
+    "tags": "fini tanzamitos dubai"
+  },
+  {
+    "name": "Waffle Kinder Bueno",
+    "price": 4.5,
+    "image": "https://picsum.photos/seed/waffle/800/600",
+    "category": "dulces",
+    "tags": "waffle kinder bueno chocolate"
   },
   {
     "name": "Bebida Coreana Melón",
