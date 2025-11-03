@@ -113,8 +113,16 @@ header.container{
   border:0; border-radius:14px;
   background:var(--brand); color:#fff; font-weight:700;
   padding:.6rem .9rem; margin-top:.5rem;
+  transition: background-color .2s ease;
 }
 .add-btn:hover{ background:var(--brand-dark) }
+
+/* Estilo para el botón cuando está desactivado (feedback visual) */
+.add-btn:disabled {
+  background-color: #4ade80; /* Un tono verde de éxito */
+  color: #fff;
+  cursor: not-allowed;
+}
 
 .footer{ display:flex; justify-content:space-between; align-items:center; padding: 1rem 0 2rem; color:var(--muted) }
 .to-top{ text-decoration:none; display:inline-grid; place-items:center; width:38px; height:38px; border-radius:12px; background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.18) }
@@ -309,3 +317,23 @@ header.container{
 .cart-total{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; font-size:16px; }
 .cart-actions{ display:flex; gap:10px; }
 .btn.ghost{ background:transparent; border:1px solid rgba(0,0,0,.15); }
+
+/* Estilos para mensaje de "No hay resultados" */
+.no-results {
+  grid-column: 1 / -1; /* Ocupa todo el ancho de la rejilla */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.10);
+  margin-top: 1rem;
+}
+.no-results h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: var(--ink);
+}
+.no-results p {
+  margin: 0;
+  color: var(--muted);
+}

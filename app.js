@@ -28,7 +28,6 @@ function hydrateChips(items){
 
 function buildCard(p){
   const el=document.createElement("article"); el.className="card product-card";
-  // HTML corregido para que coincida con los estilos del CSS (.body, .name, .price, .add-btn)
   el.innerHTML=`
     <div class="thumb"><img src="${p.image || 'assets/img/default-product.svg'}" alt="${p.name}" onerror="this.src='assets/img/default-product.svg'"></div>
     <div class="body">
@@ -40,18 +39,49 @@ function buildCard(p){
       <p class="muted">${p.desc||""}</p>
       <button class="add-btn" data-id="${p.id}">Añadir</button>
     </div>`;
-  el.querySelector(".add-btn").addEventListener("click", ()=> addToCart(p.id));
+  
+  // Lógica para el feedback visual del botón
+  const btn = el.querySelector(".add-btn");
+  btn.addEventListener("click", ()=>{
+    addToCart(p.id);
+    btn.textContent = "¡Añadido!";
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = "Añadir";
+      btn.disabled = false;
+    }, 1500);
+  });
+  
   return el;
 }
 
 function renderGrid(list){
   const grid = document.getElementById("grid"); if(!grid) return;
-  grid.innerHTML=""; const f=document.createDocumentFragment(); list.forEach(p=> f.appendChild(buildCard(p))); grid.appendChild(f);
+  grid.innerHTML="";
+
+  // Si no hay productos en la lista, muestra un mensaje
+  if(list.length === 0){
+    grid.innerHTML = `<div class="no-results">
+                        <h3>No se encontraron productos</h3>
+                        <p>Prueba a cambiar los filtros o el término de búsqueda.</p>
+                      </div>`;
+    return;
+  }
+
+  const f=document.createDocumentFragment(); list.forEach(p=> f.appendChild(buildCard(p))); grid.appendChild(f);
 }
 
 function applyFilters(){
   let list=[...state.products];
+
+  // Filtrado por categoría
   if(state.category!=="all") list=list.filter(p=>p.category===state.category);
+
+  // Filtrado por búsqueda
+  if(state.search){
+    const searchTerm = state.search.toLowerCase();
+    list = list.filter(p => (p.name||"").toLowerCase().includes(searchTerm));
+  }
 
   // Lógica de ordenación
   const sort = state.sort;
@@ -133,6 +163,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
   // Añadir listener para el selector de ordenación
   document.getElementById("sort")?.addEventListener("change", (e)=>{
     state.sort = e.target.value;
+    applyFilters();
+  });
+
+  // Añadir listener para el buscador
+  document.getElementById("searchInput")?.addEventListener("input", (e)=>{
+    state.search = e.target.value;
     applyFilters();
   });
 });

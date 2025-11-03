@@ -2,2053 +2,2053 @@
   {
     "id": "p-001",
     "name": "Caja roja Nestle",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Surtido de bombones de chocolate con leche, negro y blanco.",
+    "price": 1.2,
+    "image": "https://www.comprar-chuches.com/media/catalog/product/cache/1/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/b/o/bombones-caja-roja-nestle-45g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "chocolate, nestle, bombones, caja roja"
   },
   {
     "id": "p-002",
-    "name": "Monster Lewis",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Lewis Hamilton",
+    "desc": "Bebida energética sin azúcar con la firma de Lewis Hamilton.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2022/01/23/16/22/05/LEWIS-HAMILTON-ZERO-SUGAR_OG-IMAGE-ES.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, sin azucar, lewis hamilton"
   },
   {
     "id": "p-003",
-    "name": "Monster aussie",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Aussie Style Lemonade",
+    "desc": "Limonada energética con un toque exótico y refrescante.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2023/02/15/17/23/51/monster-aussie-lemonade-can-render.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, limonada, aussie"
   },
   {
     "id": "p-004",
-    "name": "Monster ultra fiesta mango",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ultra Fiesta Mango",
+    "desc": "Bebida energética sin azúcar con sabor a mango.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2020/07/20/19/08/49/es_ultra_fiesta_1.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, mango, sin azucar, ultra"
   },
   {
     "id": "p-005",
-    "name": "Monster monarch",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Monarch",
+    "desc": "Bebida energética con sabor a melocotón y nectarina.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2020/09/08/13/21/28/monarch-es.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, melocoton, monarch"
   },
   {
     "id": "p-006",
-    "name": "Monster ultra red",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ultra Red",
+    "desc": "Bebida energética sin azúcar con sabor a frutos rojos.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2018/01/04/16/32/38/ultra-red.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, frutos rojos, sin azucar, ultra"
   },
   {
     "id": "p-007",
-    "name": "Monster ripper",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ripper",
+    "desc": "Bebida energética con zumo de piña y guayaba.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2019/01/22/15/21/36/es-ripper-2019.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, zumo, ripper"
   },
   {
     "id": "p-008",
-    "name": "Monster ultra paradise",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ultra Paradise",
+    "desc": "Sabor kiwi y lima, sin azúcar.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2019/02/06/17/25/11/es-ultra-paradise-2019.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, kiwi, sin azucar, ultra"
   },
   {
     "id": "p-009",
-    "name": "Monster bad Apple",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Bad Apple",
+    "desc": "Manzana ácida con un toque energético.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2023/10/05/13/44/22/ES-Bad-Apple_what-we-do.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, manzana, bad apple"
   },
   {
     "id": "p-010",
-    "name": "Monster ultra watermelon",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ultra Watermelon",
+    "desc": "Refrescante sabor a sandía y sin azúcar.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2020/12/14/15/43/40/ultra-watermelon-es.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, sandia, sin azucar, ultra"
   },
   {
     "id": "p-011",
-    "name": "Monster ultra gold",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Ultra Gold",
+    "desc": "Sabor a piña dorada y sin azúcar.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2021/01/04/17/49/22/es-ultra-gold-can.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, piña, sin azucar, ultra"
   },
   {
     "id": "p-012",
-    "name": "Monster zero",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Zero",
+    "desc": "El sabor original de Monster, pero sin azúcar.",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2023/04/13/10/37/10/OG-Zero-Sugar-ES.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, zero, sin azucar"
   },
   {
     "id": "p-013",
-    "name": "Monster zero blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Zero Blanco",
+    "desc": "Sabor cítrico, ligero y refrescante, sin azúcar (Ultra White).",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2018/01/04/16/33/27/ultra-white.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, citrico, sin azucar, ultra"
   },
   {
     "id": "p-014",
-    "name": "Monster zero azul",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Monster Zero Azul",
+    "desc": "Sabor a frambuesa azul, sin azúcar (Ultra Blue).",
+    "price": 2,
+    "image": "https://www.monsterenergy.com/media/uploads_image/2018/01/04/16/31/53/ultra-blue.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "monster, bebida energetica, frambuesa, sin azucar, ultra"
   },
   {
     "id": "p-015",
-    "name": "Mentos menta",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mentos Menta",
+    "desc": "Caramelos masticables con un intenso sabor a menta.",
+    "price": 1,
+    "image": "https://www.mentos.es/static/a712c010a3073e51a14c63283f5188f6/32915/mentos-mint-roll-p-2018-new.png",
     "category": "chuches",
-    "tags": ""
+    "tags": "mentos, caramelos, menta"
   },
   {
     "id": "p-016",
-    "name": "Mentos fruit",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mentos Fruit",
+    "desc": "Caramelos masticables con sabores a frutas variadas.",
+    "price": 1,
+    "image": "https://www.mentos.es/static/7137f44a30e8c78d452d3a37b56d357d/32915/mentos-fruit-roll-p-2018.png",
     "category": "chuches",
-    "tags": ""
+    "tags": "mentos, caramelos, frutas"
   },
   {
     "id": "p-017",
     "name": "Regaliz gato",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Regaliz negro clásico en forma de espiral.",
+    "price": 0.9,
+    "image": "https://lafabricadelaschuches.com/264-large_default/regaliz-el-gato.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "regaliz, negro, gato"
   },
   {
     "id": "p-018",
     "name": "Regaliz negro Fini",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Barra de regaliz negro de la marca Fini.",
+    "price": 0.9,
+    "image": "https://cdn.shoplightspeed.com/shops/677353/files/56616428/fini-barra-de-regaliz-zaragozano-35gr.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "regaliz, negro, fini"
   },
   {
     "id": "p-019",
     "name": "Bolsa regaliz negro Fini",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bolsa con tacos de regaliz negro.",
+    "price": 0.9,
+    "image": "https://www.fini.es/pub/media/catalog/product/cache/4397f884a493a74577828065d6a00a12/f/i/fini_torcidas_regaliz_100_web.png",
     "category": "chuches",
-    "tags": ""
+    "tags": "regaliz, negro, fini, bolsa"
   },
   {
     "id": "p-020",
     "name": "Huevo Kinder",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Chocolate con leche y una sorpresa en su interior.",
+    "price": 1.4,
+    "image": "https://www.kinder.com/es/es/img/kinder-surprise-pdp-2022-T3-es-2-desktop.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "kinder, huevo, chocolate, sorpresa"
   },
   {
     "id": "p-021",
-    "name": "Kinder bueno mini",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Kinder Bueno Mini",
+    "desc": "Pequeños bombones de Kinder Bueno.",
+    "price": 1.4,
+    "image": "https://www.kinder.com/es/es/img/bueno-mini-pdp-2022-desktop.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "kinder, bueno, chocolate, mini"
   },
   {
     "id": "p-022",
-    "name": "Kinder mini",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Kinder Mini",
+    "desc": "Barritas pequeñas de chocolate Kinder.",
+    "price": 1.4,
+    "image": "https://www.kinder.com/es/es/img/kinder-chocolate-pdp-mini.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "kinder, chocolate, mini"
   },
   {
     "id": "p-023",
-    "name": "Kinder shoko",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Kinder Schoko-Bons",
+    "desc": "Bombones de chocolate con leche y trocitos de avellana.",
+    "price": 1.4,
+    "image": "https://www.kinder.com/es/es/img/schoko-bons-pdp-2022-desktop.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "kinder, schoko-bons, chocolate, avellana"
   },
   {
     "id": "p-024",
-    "name": "Kinder shoko blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Kinder Schoko-Bons White",
+    "desc": "Bombones de chocolate blanco con trocitos de avellana.",
+    "price": 1.4,
+    "image": "https://worldofsweets.de/media/image/42/41/5b/ferrero-kinder-schoko-bons-white-200g-1.jpg",
     "category": "chocolates",
-    "tags": ""
+    "tags": "kinder, schoko-bons, chocolate blanco, avellana"
   },
   {
     "id": "p-025",
-    "name": "Huesitos combix",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Huesitos Combix",
+    "desc": "Barrita de barquillo y chocolate, una combinación única.",
+    "price": 1.2,
+    "image": "https://huesitos.com/wp-content/uploads/2021/04/0002_Huesitos-Combix.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "huesitos, chocolate, barquillo, combix"
   },
   {
     "id": "p-026",
-    "name": "Huesitos",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Huesitos Original",
+    "desc": "La clásica barrita de barquillo cubierta de chocolate.",
+    "price": 1.2,
+    "image": "https://huesitos.com/wp-content/uploads/2021/04/0005_Huesitos-Original.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "huesitos, chocolate, barquillo, original"
   },
   {
     "id": "p-027",
-    "name": "Huesitos creamy",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Huesitos Creamy",
+    "desc": "Barrita con extra de cremoso relleno de cacao.",
+    "price": 1.2,
+    "image": "https://huesitos.com/wp-content/uploads/2022/10/huesitos-creamy-2.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "huesitos, chocolate, barquillo, creamy"
   },
   {
     "id": "p-028",
-    "name": "Huesitos blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Huesitos Blanco",
+    "desc": "Barrita de barquillo cubierta de chocolate blanco.",
+    "price": 1.2,
+    "image": "https://huesitos.com/wp-content/uploads/2021/04/0004_Huesitos-Blanco.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "huesitos, chocolate blanco, barquillo"
   },
   {
     "id": "p-029",
     "name": "Corn 0%",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Barrita de cereales sin azúcares añadidos.",
+    "price": 1,
+    "image": "https://cuetara.es/wp-content/uploads/2020/09/Barrita-0-azucares-1-1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "corn, cereales, sin azucar"
   },
   {
     "id": "p-030",
     "name": "Corn chocolate con leche",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Barrita de cereales con base de chocolate con leche.",
+    "price": 1,
+    "image": "https://cuetara.es/wp-content/uploads/2020/09/Barrita-chocolate-con-leche-1-1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "corn, cereales, chocolate"
   },
   {
     "id": "p-031",
     "name": "Corn negro",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Barrita de cereales con base de chocolate negro.",
+    "price": 1,
+    "image": "https://cuetara.es/wp-content/uploads/2020/09/Barrita-chocolate-negro-1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "corn, cereales, chocolate negro"
   },
   {
     "id": "p-032",
     "name": "Fruitok",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Caramelos masticables de sabores frutales.",
+    "price": 1,
+    "image": "https://www.jake.es/wp-content/uploads/2019/10/fruitok.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "fruitok, caramelos, frutas"
   },
   {
     "id": "p-033",
-    "name": "M&M",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "M&M's",
+    "desc": "Cacahuetes cubiertos de chocolate y una capa de azúcar.",
+    "price": 1.2,
+    "image": "https://www.mms.com/cdn-cgi/image/width=412,height=412,f=auto,quality=90/sites/g/files/fnmzdf286/files/2022-09/mms-peanut-vsc-single.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "m&m, chocolate, cacahuete"
   },
   {
     "id": "p-034",
-    "name": "Sony angel",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Sonny Angel",
+    "desc": "Pequeña figura coleccionable con sombrero sorpresa.",
+    "price": 1,
+    "image": "https://i.ebayimg.com/images/g/JGkAAOSw3vpi-9~b/s-l1600.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "sonny angel, coleccionable, sorpresa"
   },
   {
     "id": "p-035",
     "name": "Bracitos cacao trufa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Pastelito relleno de trufa y cubierto de cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/bracitos-cacao-con-relleno-sabor-trufa_17009_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, trufa, cacao"
   },
   {
     "id": "p-036",
     "name": "Bracitos azúcar",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Pastelito tierno espolvoreado con azúcar.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/bracitos-azucar_17008_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, azucar"
   },
   {
     "id": "p-037",
-    "name": "Rollino nocciola",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Rollino Nocciola",
+    "desc": "Pastelito enrollado con crema de avellanas.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/rollino-nocciola_17013_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, avellana, nocciola"
   },
   {
     "id": "p-038",
-    "name": "Tigreton",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tigretón",
+    "desc": "Bizcocho enrollado con crema y cobertura de chocolate.",
+    "price": 1.2,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_ L/public/2023-01/tigreton-3und.png?itok=2G4yE7N3",
     "category": "dulces",
-    "tags": ""
+    "tags": "tigreton, bimbo, pastelito, chocolate"
   },
   {
     "id": "p-039",
     "name": "Bony",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Pastelito con mermelada de fresa y cobertura de chocolate.",
+    "price": 1.2,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_L/public/2023-01/bony-3und.png?itok=x5F7y8Q-",
     "category": "dulces",
-    "tags": ""
+    "tags": "bony, bimbo, pastelito, fresa"
   },
   {
     "id": "p-040",
-    "name": "Pantera rosa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pantera Rosa",
+    "desc": "Bizcocho con relleno de nata y cobertura rosa.",
+    "price": 1.2,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_L/public/2023-01/pantera-rosa-3und.png?itok=yq7B7n5h",
     "category": "dulces",
-    "tags": ""
+    "tags": "pantera rosa, bimbo, pastelito"
   },
   {
     "id": "p-041",
-    "name": "Brownie vainilla",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Brownie Vainilla",
+    "desc": "Brownie con sabor a vainilla y pepitas de chocolate.",
+    "price": 1.2,
+    "image": "https://www.codan.es/wp-content/uploads/2020/04/BROWNIE-VAINILLA-65-G-16-UDS-CAJA.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "brownie, vainilla, codan"
   },
   {
     "id": "p-042",
-    "name": "Brownie chocolate",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Brownie Chocolate",
+    "desc": "Intenso brownie de chocolate con nueces.",
+    "price": 1.2,
+    "image": "https://www.codan.es/wp-content/uploads/2020/04/BROWNIE-CHOCOLATE-65-G-16-UDS-CAJA.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "brownie, chocolate, codan"
   },
   {
     "id": "p-043",
-    "name": "Rollino cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Rollino Cacao",
+    "desc": "Pastelito enrollado con crema de cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/rollino-cacao_17011_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, cacao"
   },
   {
     "id": "p-044",
-    "name": "Rollino crema",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Rollino Crema",
+    "desc": "Pastelito enrollado con relleno de crema.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/rollino-crema-pastelera_17012_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, crema"
   },
   {
     "id": "p-045",
-    "name": "Cuadraditos cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Cuadraditos Cacao",
+    "desc": "Bizcochitos cuadrados con pepitas de chocolate.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/cuadraditos-cacao_17046_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pastelito, cacao, cuadraditos"
   },
   {
     "id": "p-046",
-    "name": "Croissants cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Croissants Cacao",
+    "desc": "Croissant tierno relleno de crema de cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/croissants-cacao_17019_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, croissant, cacao"
   },
   {
     "id": "p-047",
     "name": "Pandorino",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bizcocho tierno y esponjoso, ideal para desayunos.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/pandorino-clasico_17006_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, pandorino, bizcocho"
   },
   {
     "id": "p-048",
-    "name": "Caña cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Caña Cacao",
+    "desc": "Caña de hojaldre rellena de crema de cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/canas-cacao_17016_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, caña, cacao, hojaldre"
   },
   {
     "id": "p-049",
-    "name": "Bollisol go",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Bollisol Go",
+    "desc": "Bollo tierno con pepitas de chocolate.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/bollisol-go-cacao_17001_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, bollisol, bollo, cacao"
   },
   {
     "id": "p-050",
-    "name": "Brown's nata",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Brown's Nata",
+    "desc": "Bizcocho de chocolate relleno de nata.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/browns-nata_17036_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, browns, nata, chocolate"
   },
   {
     "id": "p-051",
     "name": "Guaits",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Finas láminas de bizcocho con cobertura de cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/guaits_17010_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, guaits, bizcocho, cacao"
   },
   {
     "id": "p-052",
-    "name": "Chapela cacao leche",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Chapela Cacao Leche",
+    "desc": "Bizcocho con cobertura de chocolate con leche.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/chapela-cacao-leche_17030_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, chapela, bizcocho, chocolate"
   },
   {
     "id": "p-053",
-    "name": "Chapela extracao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Chapela Extracao",
+    "desc": "Bizcocho con cobertura de chocolate intenso.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/chapela-extracao_17032_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, chapela, bizcocho, chocolate negro"
   },
   {
     "id": "p-054",
-    "name": "Chapela zebra",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Chapela Zebra",
+    "desc": "Bizcocho de vainilla con rayas de chocolate.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/chapela-zebra_17031_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, chapela, bizcocho, zebra"
   },
   {
     "id": "p-055",
-    "name": "Lunas cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Lunas Cacao",
+    "desc": "Galletas con forma de luna y sabor a cacao.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/lunas-cacao_17047_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, galletas, lunas, cacao"
   },
   {
     "id": "p-056",
-    "name": "Dyet chocolate",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Dyet Chocolate",
+    "desc": "Bizcocho sin azúcares añadidos con sabor a chocolate.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/dyet-chocolate_17050_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, dyet, sin azucar, chocolate"
   },
   {
     "id": "p-057",
-    "name": "Dyet nata",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Dyet Nata",
+    "desc": "Bizcocho sin azúcares añadidos con relleno de nata.",
+    "price": 1.1,
+    "image": "https://dulcesol.com/wp-content/uploads/2022/10/dyet-crema_17051_1.jpg",
     "category": "dulces",
-    "tags": ""
+    "tags": "dulcesol, dyet, sin azucar, nata"
   },
   {
     "id": "p-058",
-    "name": "Tarta de manzana",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tarta de Manzana",
+    "desc": "Pastelito individual con compota de manzana.",
+    "price": 1.5,
+    "image": "https://www.ooffee.es/cdn/shop/products/Tarta-manzana_1200x.jpg?v=1605348873",
     "category": "dulces",
-    "tags": ""
+    "tags": "tarta, manzana, pastelito"
   },
   {
     "id": "p-059",
-    "name": "Algodón de azucar",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Algodón de Azúcar",
+    "desc": "Nube de azúcar clásica en vaso.",
+    "price": 1,
+    "image": "https://www.mundo-fiesta.com/cdn/shop/products/algodon-de-azucar-fresa-1-100299_1200x1200.jpg?v=1658498076",
     "category": "chuches",
-    "tags": ""
+    "tags": "algodon de azucar, dulce"
   },
   {
     "id": "p-060",
-    "name": "Algodón de azucar bolsa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Algodón de Azúcar Bolsa",
+    "desc": "Nube de azúcar clásica en formato bolsa.",
+    "price": 1,
+    "image": "https://chuchelandiajl.com/1126-large_default/bolsa-de-algodon-de-azucar-de-40-grs-damel.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "algodon de azucar, dulce, bolsa"
   },
   {
     "id": "p-061",
     "name": "Mikado",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Palitos de galleta cubiertos de chocolate con leche.",
+    "price": 1.4,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_L/public/2022-07/0000s_0007_7622201774397.png?itok=y_v5Lg00",
     "category": "galletas",
-    "tags": ""
+    "tags": "mikado, galletas, chocolate"
   },
   {
     "id": "p-062",
-    "name": "TUC bacon",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "TUC Bacon",
+    "desc": "Galletas saladas con sabor a bacon.",
+    "price": 1.2,
+    "image": "https://yourspanishshop.es/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/u/tuc-bacon.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "tuc, galletas saladas, bacon"
   },
   {
     "id": "p-063",
-    "name": "TUC queso",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "TUC Queso",
+    "desc": "Galletas saladas con sabor a queso.",
+    "price": 1.2,
+    "image": "https://yourspanishshop.es/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/t/u/tuc-queso.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "tuc, galletas saladas, queso"
   },
   {
     "id": "p-064",
-    "name": "TUC original",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "TUC Original",
+    "desc": "Las clásicas galletas saladas TUC.",
+    "price": 1.2,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_L/public/2023-01/TUC-Original-100g.png?itok=8E5x2q7S",
     "category": "snacks",
-    "tags": ""
+    "tags": "tuc, galletas saladas, original"
   },
   {
     "id": "p-065",
-    "name": "Florbù castellana miel",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Florbú Castellana Miel",
+    "desc": "Galletas tostadas con un toque de miel.",
+    "price": 1.2,
+    "image": "https://florbu.com/wp-content/uploads/2021/04/castellana_miel_265g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "florbu, galletas, miel"
   },
   {
     "id": "p-066",
-    "name": "Pringles paprika",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Paprika",
+    "desc": "Patatas fritas con intenso sabor a pimentón.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_paprika_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, paprika"
   },
   {
     "id": "p-067",
-    "name": "Pringles sour cream",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Sour Cream & Onion",
+    "desc": "Patatas fritas con sabor a crema agria y cebolla.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_sour_cream_and_onion_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, sour cream, onion"
   },
   {
     "id": "p-068",
-    "name": "Pringles jamón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Jamón",
+    "desc": "Patatas fritas con el clásico sabor a jamón.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_jamon_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, jamon"
   },
   {
     "id": "p-069",
-    "name": "Pringles Texas bbq",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Texas BBQ",
+    "desc": "Patatas fritas con un intenso sabor a barbacoa Texas.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_texas_bbq_sauce_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, bbq, barbacoa"
   },
   {
     "id": "p-070",
-    "name": "Pringles cheese & onion",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Cheese & Onion",
+    "desc": "Patatas fritas con sabor a queso y cebolla.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_cheese_and_onion_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, cheese, onion, queso"
   },
   {
     "id": "p-071",
-    "name": "Pringles pizza",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Pizza",
+    "desc": "Patatas fritas con el inconfundible sabor a pizza.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_pizza_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, pizza"
   },
   {
     "id": "p-072",
-    "name": "Pringles HOT bbq ribs",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles HOT BBQ Ribs",
+    "desc": "Costillas a la barbacoa picantes.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/hot_sweet_bbq.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, hot, picante, bbq"
   },
   {
     "id": "p-073",
-    "name": "Pringles HOT sour cream",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles HOT Sour Cream",
+    "desc": "Crema agria y cebolla con un toque picante.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/spicy_sour_cream.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, hot, picante, sour cream"
   },
   {
     "id": "p-074",
-    "name": "Pringles HOT chilli & lime",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles HOT Chilli & Lime",
+    "desc": "Chile y lima para una explosión de sabor picante y cítrico.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_hot_chilli_and_lime_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, hot, picante, chilli, lime"
   },
   {
     "id": "p-075",
-    "name": "Pringles original",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Original",
+    "desc": "El sabor original y clásico de Pringles.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_original_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, original"
   },
   {
     "id": "p-076",
-    "name": "Pringles salta & vinegar",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Salt & Vinegar",
+    "desc": "Patatas fritas con sabor a sal y vinagre.",
+    "price": 2.3,
+    "image": "https://images.pringles.com/es-es/content/dam/global/pringles/products/es_es/pringles_salt_and_vinegar_165g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, salt, vinegar, vinagre"
   },
   {
     "id": "p-077",
-    "name": "Pringles super Mario mystery",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Super Mario Mystery",
+    "desc": "Sabor misterioso edición especial Super Mario.",
+    "price": 2.3,
+    "image": "https://pbs.twimg.com/media/F3L9hD2XgAAeD5S.jpg:large",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, super mario, mystery"
   },
   {
     "id": "p-078",
-    "name": "Pringles pequeñas paprika",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Pequeñas Paprika",
+    "desc": "Formato pequeño para llevar de Pringles Paprika.",
+    "price": 1.5,
+    "image": "https://www.yourspanishcorner.com/3932-large_default/pringles-paprika-40-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, paprika, pequeño"
   },
   {
     "id": "p-079",
-    "name": "Pringles pequeñas original",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Pequeñas Original",
+    "desc": "Formato pequeño para llevar de Pringles Original.",
+    "price": 1.5,
+    "image": "https://www.yourspanishcorner.com/3931-large_default/pringles-original-40-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, original, pequeño"
   },
   {
     "id": "p-080",
-    "name": "Pringles pequeñas sour cream",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Pequeñas Sour Cream",
+    "desc": "Formato pequeño para llevar de Pringles Sour Cream & Onion.",
+    "price": 1.5,
+    "image": "https://www.yourspanishcorner.com/3933-thickbox_default/pringles-sour-cream-onion-40-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, sour cream, onion, pequeño"
   },
   {
     "id": "p-081",
-    "name": "Pringles pequeñas hoy spicy",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pringles Pequeñas Hot Spicy",
+    "desc": "Formato pequeño para llevar de Pringles Hot & Spicy.",
+    "price": 1.5,
+    "image": "https://www.yourspanishcorner.com/3930-thickbox_default/pringles-hot-spicy-40-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pringles, patatas, hot, picante, pequeño"
   },
   {
     "id": "p-082",
-    "name": "Coca-Cola cherry",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Cherry",
+    "desc": "Refresco de cola con un delicioso sabor a cereza.",
+    "price": 1.4,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-cherry-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, cherry, cereza"
   },
   {
     "id": "p-083",
-    "name": "Fanta sandia",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Sandía",
+    "desc": "Refresco sin azúcar con sabor a sandía.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fanta-sandia-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, sandia, sin azucar"
   },
   {
     "id": "p-084",
-    "name": "Fanta frambuesa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Frambuesa",
+    "desc": "Refresco sin azúcar con sabor a frambuesa.",
+    "price": 1.3,
+    "image": "https://www.fanta.es/content/dam/onexp/es/fanta/products/fanta-frambuesa-330ml.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, frambuesa, sin azucar"
   },
   {
     "id": "p-085",
-    "name": "Fanta exotic",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Exotic",
+    "desc": "Refresco con una mezcla de sabores de frutas exóticas.",
+    "price": 1.3,
+    "image": "https://www.fanta.se/content/dam/onexp/se/fanta/products/fanta-exotic-33cl-burk.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, exotic, frutas"
   },
   {
     "id": "p-086",
-    "name": "Fanta fresa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Fresa",
+    "desc": "Refresco con un dulce y refrescante sabor a fresa.",
+    "price": 1.3,
+    "image": "https://i.ebayimg.com/images/g/H0IAAOSw~NBkM6hZ/s-l1600.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, fresa"
   },
   {
     "id": "p-087",
-    "name": "Nutella & go",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nutella & Go",
+    "desc": "Crema de cacao Nutella con palitos de pan para dipear.",
+    "price": 1.1,
+    "image": "https://www.nutella.com/es/es/nochocolate/nutella-go/img/pdp_nutella-go-crispy-sweet.png",
     "category": "dulces",
-    "tags": ""
+    "tags": "nutella, chocolate, snack"
   },
   {
     "id": "p-088",
-    "name": "Nutella b-ready",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nutella B-Ready",
+    "desc": "Barrita de pan crujiente rellena de Nutella.",
+    "price": 1.1,
+    "image": "https://www.nutella.com/es/es/nochocolate/nutella-b-ready/img/pdp_b-ready-t1x6_es.png",
     "category": "dulces",
-    "tags": ""
+    "tags": "nutella, chocolate, snack, b-ready"
   },
   {
     "id": "p-089",
-    "name": "Nutella biscuits",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nutella Biscuits",
+    "desc": "Galletas crujientes con un corazón cremoso de Nutella.",
+    "price": 1.6,
+    "image": "https://www.nutella.com/es/es/nochocolate/nutella-biscuits/img/pdp_nutella-biscuits_es.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "nutella, galletas, chocolate"
   },
   {
     "id": "p-090",
     "name": "Hanuta",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Barquillo relleno de crema de avellanas y cacao.",
+    "price": 1.5,
+    "image": "https://www.kinder.com/es/es/img/hanuta-pdp-2022-desktop.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "hanuta, kinder, avellana, chocolate"
   },
   {
     "id": "p-091",
     "name": "Toblerone",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Chocolate con leche suizo con nougat de miel y almendras.",
+    "price": 2.1,
+    "image": "https://www.toblerone.es/media/catalog/product/t/o/toblerone-milk-100g.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "toblerone, chocolate, miel, almendras"
   },
   {
     "id": "p-092",
-    "name": "Toblerone blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Toblerone Blanco",
+    "desc": "Chocolate blanco suizo con nougat de miel y almendras.",
+    "price": 2.1,
+    "image": "https://www.toblerone.es/media/catalog/product/t/o/toblerone-white-100g.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "toblerone, chocolate blanco, miel, almendras"
   },
   {
     "id": "p-093",
     "name": "Reese's",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bombones de chocolate con leche rellenos de crema de cacahuete.",
+    "price": 1.4,
+    "image": "https://www.reeses.com/content/dam/platform-site/sites/reeses-site/products/8410-reeses-peanut-butter-cups.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "reeses, chocolate, cacahuete"
   },
   {
     "id": "p-094",
-    "name": "Reese's blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Reese's Blanco",
+    "desc": "Bombones de chocolate blanco rellenos de crema de cacahuete.",
+    "price": 1.4,
+    "image": "https://www.reeses.com/content/dam/platform-site/sites/reeses-site/products/reeses-white-peanut-butter-cups-king-size.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "reeses, chocolate blanco, cacahuete"
   },
   {
     "id": "p-095",
-    "name": "Ramune piña",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Ramune Piña",
+    "desc": "Refresco japonés con sabor a piña y una canica en la botella.",
+    "price": 2.2,
+    "image": "https://www.japonshop.com/fotos/ramune_hatakosen_pina_16147_1.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ramune, refresco, piña, japones"
   },
   {
     "id": "p-096",
-    "name": "Ramune melón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Ramune Melón",
+    "desc": "Refresco japonés con sabor a melón y una canica en la botella.",
+    "price": 2.2,
+    "image": "https://www.japonshop.com/fotos/ramune_hatakosen_melon_16149_1.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ramune, refresco, melon, japones"
   },
   {
     "id": "p-097",
-    "name": "Ramune arándanos",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Ramune Arándanos",
+    "desc": "Refresco japonés con sabor a arándanos y una canica en la botella.",
+    "price": 2.2,
+    "image": "https://www.japonshop.com/fotos/ramune-hatakosen-arandanos-200-ml_16151_1.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ramune, refresco, arandanos, japones"
   },
   {
     "id": "p-098",
-    "name": "Agua grande",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Agua Grande",
+    "desc": "Botella de agua mineral de 1.5L.",
+    "price": 1,
+    "image": "https://www.solandebrisas.com/wp-content/uploads/2019/12/15L-PET-Agua-Mineral-Natural-2.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "agua, grande, botella"
   },
   {
     "id": "p-099",
-    "name": "Agua pequeña",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Agua Pequeña",
+    "desc": "Botella de agua mineral de 50cl.",
+    "price": 0.6,
+    "image": "https://www.solandebrisas.com/wp-content/uploads/2019/12/50cl-PET-Agua-Mineral-Natural-2.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "agua, pequeña, botella"
   },
   {
     "id": "p-100",
     "name": "Zumrok",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Zumo para congelar y disfrutar como un polo.",
+    "price": 1.5,
+    "image": "https://kelia.es/wp-content/uploads/2021/05/zumrok.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "zumrok, polo, zumo, congelar"
   },
   {
     "id": "p-101",
-    "name": "Mogu Mogu fresa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mogu Mogu Fresa",
+    "desc": "Bebida de fresa con trocitos de nata de coco.",
+    "price": 2.2,
+    "image": "https://www.mogumogufood.com/wp-content/uploads/2021/05/mogu-mogu-strawberry.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "mogu mogu, fresa, nata de coco"
   },
   {
     "id": "p-102",
-    "name": "Mogu Mogu melón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mogu Mogu Melón",
+    "desc": "Bebida de melón con trocitos de nata de coco.",
+    "price": 2.2,
+    "image": "https://www.mogumogufood.com/wp-content/uploads/2021/05/mogu-mogu-melon.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "mogu mogu, melon, nata de coco"
   },
   {
     "id": "p-103",
-    "name": "Mogu Mogu mango",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mogu Mogu Mango",
+    "desc": "Bebida de mango con trocitos de nata de coco.",
+    "price": 2.2,
+    "image": "https://www.mogumogufood.com/wp-content/uploads/2021/05/mogu-mogu-mango.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "mogu mogu, mango, nata de coco"
   },
   {
     "id": "p-104",
-    "name": "Mogu Mogu arándanos",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Mogu Mogu Arándanos",
+    "desc": "Bebida de arándanos con trocitos de nata de coco.",
+    "price": 2.2,
+    "image": "https://www.mogumogufood.com/wp-content/uploads/2021/05/mogu-mogu-blackcurrant.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "mogu mogu, arandanos, nata de coco"
   },
   {
     "id": "p-105",
-    "name": "Lata chupa chups",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Lata Chupa Chups",
+    "desc": "Refresco con el sabor del clásico Chupa Chups.",
+    "price": 1,
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/71u9xX+yXdL._AC_UL600_SR600,600_.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "chupa chups, refresco, lata"
   },
   {
     "id": "p-106",
-    "name": "Hello panda chocolate",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Hello Panda Chocolate",
+    "desc": "Galletas con forma de panda rellenas de chocolate.",
+    "price": 1.4,
+    "image": "https://www.meiji.com/global/products/images/hp_choc_box_3d.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "hello panda, galletas, chocolate"
   },
   {
     "id": "p-107",
-    "name": "Hello panda crema",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Hello Panda Crema",
+    "desc": "Galletas con forma de panda rellenas de crema de leche.",
+    "price": 1.4,
+    "image": "https://www.meiji.com/global/products/images/hp_milk_box_3d.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "hello panda, galletas, crema, leche"
   },
   {
     "id": "p-108",
     "name": "Noodle",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Fideos instantáneos listos en pocos minutos.",
+    "price": 1.9,
+    "image": "https://www.nissin-foods.de/wp-content/uploads/2022/10/Soba-Cup-Classic.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "noodle, fideos, instantaneo"
   },
   {
     "id": "p-109",
-    "name": "Ultra Ice Tea zoro",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Ultra Ice Tea Zoro",
+    "desc": "Té helado de melocotón, edición One Piece (Zoro).",
+    "price": 2.2,
+    "image": "https://ultraicetea.com/wp-content/uploads/2023/11/ULTRA-ICE-TEA-ONE-PIECE-ZORO.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ice tea, te, one piece, zoro"
   },
   {
     "id": "p-110",
     "name": "Ultra Ice Tea Luffy",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Té helado de frutos rojos, edición One Piece (Luffy).",
+    "price": 2.2,
+    "image": "https://ultraicetea.com/wp-content/uploads/2023/11/ULTRA-ICE-TEA-ONE-PIECE-LUFFY.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ice tea, te, one piece, luffy"
   },
   {
     "id": "p-111",
     "name": "Ultra Ice Tea Naruto",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Té helado de melón, edición Naruto.",
+    "price": 2.2,
+    "image": "https://ultraicetea.com/wp-content/uploads/2023/11/ULTRA-ICE-TEA-NARUTO-SHIPPUDEN-NARUTO.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ice tea, te, naruto"
   },
   {
     "id": "p-112",
-    "name": "Ultra Ice Tea Vegetta",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Ultra Ice Tea Vegeta",
+    "desc": "Té helado, edición Dragon Ball Z (Vegeta).",
+    "price": 2.2,
+    "image": "https://ultraicetea.com/wp-content/uploads/2023/11/ULTRA-ICE-TEA-DRAGON-BALL-Z-VEGETA.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "ice tea, te, dragon ball, vegeta"
   },
   {
     "id": "p-113",
-    "name": "Lotte White milk",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Lotte White Milk",
+    "desc": "Bebida de leche y yogur suave y refrescante.",
+    "price": 1.5,
+    "image": "https://www.lotteindia.com/images/products/milk-lotte-lg.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "lotte, leche, yogur"
   },
   {
     "id": "p-114",
-    "name": "Lotte cacao",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Lotte Cacao",
+    "desc": "Bebida de leche con un rico sabor a cacao.",
+    "price": 1.5,
+    "image": "https://www.lotteindia.com/images/products/Choco-Lotte.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "lotte, leche, cacao, chocolate"
   },
   {
     "id": "p-115",
-    "name": "Sour patch pequeño",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Sour Patch Pequeño",
+    "desc": "Gominolas ácidas con cobertura de azúcar, formato pequeño.",
+    "price": 1.5,
+    "image": "https://www.sourpatchkids.com/media/catalog/product/cache/43e77cf68175d4039c3647a5de542d99/s/o/sour-patch-kids-original-soft-chewy-candy-3-5-oz-box.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "sour patch, gominolas, acido"
   },
   {
     "id": "p-116",
-    "name": "Sour patch grande",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Sour Patch Grande",
+    "desc": "Gominolas ácidas con cobertura de azúcar, formato grande.",
+    "price": 2.5,
+    "image": "https://www.sourpatchkids.com/media/catalog/product/cache/43e77cf68175d4039c3647a5de542d99/s/o/sour-patch-kids-original-soft-chewy-candy-8-oz-bag.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "sour patch, gominolas, acido"
   },
   {
     "id": "p-117",
     "name": "Chicle Doraemon",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Chicle con sabor a frutas y cromos de Doraemon.",
+    "price": 0.9,
+    "image": "https://static.condisline.com/resize/2000x2000/images/catalog/large/5010000.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "chicle, doraemon, frutas"
   },
   {
     "id": "p-118",
-    "name": "Chicle sonomama azul",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Chicle Sonomama Azul",
+    "desc": "Chicle japonés con un sabor ácido sorpresa.",
+    "price": 0.9,
+    "image": "https://www.japonshop.com/fotos/chicles-sonomama-soda-16503_1.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "chicle, sonomama, acido, japones"
   },
   {
     "id": "p-119",
-    "name": "Chicle sonomama amarillo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Chicle Sonomama Amarillo",
+    "desc": "Chicle japonés con sabor a cola y sorpresa ácida.",
+    "price": 0.9,
+    "image": "https://www.japonshop.com/fotos/chicles_sonomama_cola_16502_1.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "chicle, sonomama, acido, japones, cola"
   },
   {
     "id": "p-120",
-    "name": "Brain licker",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Brain Licker",
+    "desc": "Caramelo líquido ácido en formato roll-on.",
+    "price": 1.5,
+    "image": "https://www.candywharehouse.co.nz/cdn/shop/products/Brainlicker_1024x1024.jpg?v=1618882005",
     "category": "chuches",
-    "tags": ""
+    "tags": "brain licker, caramelo liquido, acido"
   },
   {
     "id": "p-121",
-    "name": "Reyes variado",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Reyes Variado",
+    "desc": "Bolsa con surtido de frutos secos y snacks.",
+    "price": 1,
+    "image": "https://reyes.es/wp-content/uploads/2021/04/MIX-5-MINI.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "reyes, frutos secos, mix"
   },
   {
     "id": "p-122",
-    "name": "Palomitas colores",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Palomitas Colores",
+    "desc": "Palomitas de maíz dulces recubiertas de caramelo de colores.",
+    "price": 1.4,
+    "image": "https://tosfrit.com/wp-content/uploads/2020/03/Palomitas-de-colores-130g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "palomitas, colores, dulce"
   },
   {
     "id": "p-123",
-    "name": "Palomitas mantequilla",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Palomitas Mantequilla",
+    "desc": "Palomitas de maíz con sabor a mantequilla.",
+    "price": 1.4,
+    "image": "https://tosfrit.com/wp-content/uploads/2020/03/Palomitas-mantequilla-90-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "palomitas, mantequilla, salado"
   },
   {
     "id": "p-124",
-    "name": "Palomitas ketchup",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Palomitas Ketchup",
+    "desc": "Palomitas de maíz con sabor a ketchup.",
+    "price": 1.4,
+    "image": "https://tosfrit.com/wp-content/uploads/2020/03/Palomitas-ketchup-90-g.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "palomitas, ketchup, salado"
   },
   {
     "id": "p-125",
-    "name": "Gum ball attack",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Gum Ball Attack",
+    "desc": "Máquina de chicles de bola de juguete.",
+    "price": 1.2,
+    "image": "https://i.ebayimg.com/images/g/V3AAAOSw7vVj2i9g/s-l1600.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "chicle, maquina, juguete"
   },
   {
     "id": "p-126",
-    "name": "Jonhy Bee gel",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jonhy Bee Gel",
+    "desc": "Caramelo en gel con sabor a frutas.",
+    "price": 1.2,
+    "image": "https://www.johnybee.com/wp-content/uploads/2021/06/Crazy-Roll-Display-Johny-Bee.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "jonhy bee, caramelo, gel"
   },
   {
     "id": "p-127",
-    "name": "Jonhy Bee peine",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jonhy Bee Peine",
+    "desc": "Juguete con forma de peine que contiene caramelos.",
+    "price": 1.2,
+    "image": "https://www.johnybee.com/wp-content/uploads/2021/06/Sweet-Comb-Display-Johny-Bee.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "jonhy bee, caramelo, peine, juguete"
   },
   {
     "id": "p-128",
-    "name": "Jonhy Bee spray",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jonhy Bee Spray",
+    "desc": "Caramelo líquido en formato spray.",
+    "price": 1.2,
+    "image": "https://www.johnybee.com/wp-content/uploads/2021/06/Splash-Spray-Display-Johny-Bee-2.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "jonhy bee, caramelo, spray"
   },
   {
     "id": "p-129",
-    "name": "Jonhy Bee pen",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jonhy Bee Pen",
+    "desc": "Bolígrafo de juguete con caramelo líquido en su interior.",
+    "price": 1.2,
+    "image": "https://www.johnybee.com/wp-content/uploads/2021/06/Sweet-Pen-Display-Johny-Bee.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "jonhy bee, caramelo, pen, juguete"
   },
   {
     "id": "p-130",
-    "name": "Jonhy Bee chicles",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jonhy Bee Chicles",
+    "desc": "Bote de chicles de bola de varios sabores.",
+    "price": 0.9,
+    "image": "https://www.johnybee.com/wp-content/uploads/2021/06/Gumballs-Can-Display-Johny-Bee-2.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "jonhy bee, chicles, bola"
   },
   {
     "id": "p-131",
-    "name": "Juicy drop",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Juicy Drop",
+    "desc": "Caramelo para mojar en gel ácido.",
+    "price": 1.5,
+    "image": "https://i.ebayimg.com/images/g/xSMAAOSwYyZkcn-D/s-l1600.jpg",
     "category": "chuches",
-    "tags": ""
+    "tags": "juicy drop, caramelo, acido"
   },
   {
     "id": "p-132",
     "name": "Bits",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Crujientes snacks de patata con forma de aritos.",
+    "price": 1.2,
+    "image": "https://grefusa.com/wp-content/uploads/2021/03/Bits-100g.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "bits, grefusa, patata, aros"
   },
   {
     "id": "p-133",
-    "name": "Jumpers puntazo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Jumpers Puntazo",
+    "desc": "Snack de mantequilla con forma de estrella.",
+    "price": 1.2,
+    "image": "https://sycalimentacion.com/wp-content/uploads/2020/09/JUMPERS-EL-AUTENTICO-PUNTAZO-32GR-20U.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "jumpers, mantequilla, estrella"
   },
   {
     "id": "p-134",
-    "name": "Milka praliné thank you",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Praliné Thank You",
+    "desc": "Bombones de chocolate Milka con relleno de praliné.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201794951_C1N1_ES_b_2.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, bombones, praline, thank you"
   },
   {
     "id": "p-135",
-    "name": "Milka mini cookies",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Mini Cookies",
+    "desc": "Pequeñas galletas con pepitas de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210746969_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, galletas, cookies, mini"
   },
   {
     "id": "p-136",
-    "name": "Milka mini wafers",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Mini Wafers",
+    "desc": "Pequeños barquillos cubiertos de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201804247_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, barquillo, wafers, mini"
   },
   {
     "id": "p-137",
-    "name": "Milka choco biscuits",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Choco Biscuits",
+    "desc": "Galletas cubiertas por una tableta de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201798362_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, galletas, chocolate, biscuits"
   },
   {
     "id": "p-138",
-    "name": "Milka choco brownie",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Choco Brownie",
+    "desc": "Tiernos brownies de chocolate con pepitas de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210682137_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, brownie, chocolate"
   },
   {
     "id": "p-139",
-    "name": "Milka crema",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Crema",
+    "desc": "Crema de untar de cacao y avellanas Milka.",
+    "price": 3,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210609950_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, crema, untar, cacao"
   },
   {
     "id": "p-140",
-    "name": "Milka pause",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Pause",
+    "desc": "Barrita de barquillo y chocolate para una pausa dulce.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201798409_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, barquillo, chocolate, pause"
   },
   {
     "id": "p-141",
-    "name": "Milka sensation cookies",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Sensation Cookies",
+    "desc": "Galletas con un corazón de chocolate líquido Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210292725_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, galletas, cookies, sensation"
   },
   {
     "id": "p-142",
-    "name": "Milka wafer & go",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Wafer & Go",
+    "desc": "Barrita de barquillo y chocolate Milka para llevar.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201798386_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, barquillo, wafer"
   },
   {
     "id": "p-143",
-    "name": "Milka moo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Moo",
+    "desc": "Galletas con forma de vaca y base de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210746921_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, galletas, moo, vaca"
   },
   {
     "id": "p-144",
-    "name": "Milka wafer",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Wafer",
+    "desc": "Barquillos crujientes rellenos y cubiertos de chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210746945_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, barquillo, wafer"
   },
   {
     "id": "p-145",
-    "name": "Milka nuissini",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Nussini",
+    "desc": "Barrita de barquillo con avellanas y chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201798423_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, nussini, avellanas, barquillo"
   },
   {
     "id": "p-146",
-    "name": "Tableta Milka grande",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tableta Milka Grande",
+    "desc": "Tableta de chocolate Milka de 300g.",
+    "price": 3,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210738421_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, grande"
   },
   {
     "id": "p-147",
-    "name": "Milka milkinis",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Milkinis",
+    "desc": "Barritas de chocolate Milka rellenas de leche.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210709667_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, milkinis, leche, chocolate"
   },
   {
     "id": "p-148",
-    "name": "Milka crema leche",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Crema Leche",
+    "desc": "Tableta de chocolate Milka con relleno cremoso de leche.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210709667_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, leche"
   },
   {
     "id": "p-149",
-    "name": "Milka daim",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Daim",
+    "desc": "Tableta de chocolate Milka con trocitos de caramelo Daim.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210688320_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, daim, caramelo"
   },
   {
     "id": "p-150",
     "name": "Milka TUC",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Tableta de chocolate Milka con galletas saladas TUC.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210298130_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, tuc, salado"
   },
   {
     "id": "p-151",
-    "name": "Milka triple chocolate",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Triple Chocolate",
+    "desc": "Tableta con tres texturas de chocolate: líquido, mousse y sólido.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210298093_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, triple chocolate"
   },
   {
     "id": "p-152",
-    "name": "Milka triple caramelo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Triple Caramelo",
+    "desc": "Tableta con tres texturas de caramelo.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210298116_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, triple caramelo"
   },
   {
     "id": "p-153",
     "name": "Milka Oreo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Tableta de chocolate Milka con trozos de galleta Oreo.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210688368_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, oreo"
   },
   {
     "id": "p-154",
-    "name": "Milka lu",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Lu",
+    "desc": "Tableta de chocolate Milka con galletas Lu.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210298154_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, lu"
   },
   {
     "id": "p-155",
-    "name": "Milka avellanas",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Avellanas",
+    "desc": "Tableta de chocolate Milka con avellanas enteras.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210709728_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, avellanas"
   },
   {
     "id": "p-156",
-    "name": "Milka caramelo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Caramelo",
+    "desc": "Tableta de chocolate Milka rellena de caramelo líquido.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210709742_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, caramelo"
   },
   {
     "id": "p-157",
-    "name": "Milka chocolate blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Chocolate Blanco",
+    "desc": "Tableta de cremoso chocolate blanco Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622300486045_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate blanco"
   },
   {
     "id": "p-158",
-    "name": "Milka confeti",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Confeti",
+    "desc": "Tableta de chocolate Milka con grageas de colores crujientes.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210688344_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, confeti"
   },
   {
     "id": "p-159",
-    "name": "Milka chips ahoy",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Chips Ahoy",
+    "desc": "Tableta de chocolate Milka con trozos de galletas Chips Ahoy.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622210688405_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, chips ahoy"
   },
   {
     "id": "p-160",
-    "name": "Milka Oreo brownie",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Milka Oreo Brownie",
+    "desc": "Tableta de chocolate Milka con trozos de brownie y Oreo.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201410636_C1N1_ES_b.png",
     "category": "chocolates",
-    "tags": ""
+    "tags": "milka, tableta, chocolate, oreo, brownie"
   },
   {
     "id": "p-161",
-    "name": "Nestlé crunch",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé Crunch",
+    "desc": "Tableta de chocolate con leche y arroz inflado crujiente.",
+    "price": 1.3,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Crunch-100g.png?itok=x0F1Xy8F",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, crunch, chocolate, arroz inflado"
   },
   {
     "id": "p-162",
-    "name": "Galleta Lotus rellena choco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Galleta Lotus Rellena Choco",
+    "desc": "Dos galletas caramelizadas Lotus Biscoff con relleno de chocolate.",
+    "price": 1.4,
+    "image": "https://www.lotusbiscoff.com/sites/default/files/2021-05/pack-filled-choco.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "lotus, biscoff, galletas, chocolate"
   },
   {
     "id": "p-163",
-    "name": "Galleta Lotus rellena vainilla",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Galleta Lotus Rellena Vainilla",
+    "desc": "Dos galletas caramelizadas Lotus Biscoff con relleno de vainilla.",
+    "price": 1.4,
+    "image": "https://www.lotusbiscoff.com/sites/default/files/2021-05/pack-filled-vanilla.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "lotus, biscoff, galletas, vainilla"
   },
   {
     "id": "p-164",
     "name": "Filipinos",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Rosquillas de galleta cubiertas de auténtico chocolate con leche.",
+    "price": 1.4,
+    "image": "https://www.bimbo.es/sites/default/files/styles/product_image_L/public/2022-07/0000s_0000_8410056105314.png?itok=o8S2T8yQ",
     "category": "galletas",
-    "tags": ""
+    "tags": "filipinos, galletas, chocolate"
   },
   {
     "id": "p-165",
-    "name": "Oreo brownie",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Oreo Brownie",
+    "desc": "Galletas Oreo con un delicioso relleno sabor brownie.",
+    "price": 1.3,
+    "image": "https://www.oreo.es/wp-content/uploads/2023/10/84100738_C1N1_ES_b.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "oreo, galletas, brownie, chocolate"
   },
   {
     "id": "p-166",
-    "name": "Oreo golden",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Oreo Golden",
+    "desc": "Galletas Oreo de vainilla con el clásico relleno de crema.",
+    "price": 1.3,
+    "image": "https://www.oreo.es/wp-content/uploads/2023/10/7622210696773_C1N1_ES_b.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "oreo, galletas, golden, vainilla"
   },
   {
     "id": "p-167",
-    "name": "Oreo remix",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Oreo Remix",
+    "desc": "Galletas Oreo con relleno de frambuesa y vainilla.",
+    "price": 1.3,
+    "image": "https://www.oreo.es/wp-content/uploads/2023/10/7622201806326_C1N1_ES_b.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "oreo, galletas, remix, frambuesa"
   },
   {
     "id": "p-168",
     "name": "Crema Lotus",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Crema de untar elaborada con galletas caramelizadas Lotus Biscoff.",
+    "price": 3.4,
+    "image": "https://www.lotusbiscoff.com/sites/default/files/2021-05/pack-spread.png",
     "category": "galletas",
-    "tags": ""
+    "tags": "lotus, biscoff, crema, untar"
   },
   {
     "id": "p-169",
-    "name": "Nestlé jungly negro",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé Jungly Negro",
+    "desc": "Tableta de chocolate negro con trocitos de galleta.",
+    "price": 2.1,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Jungly-Negro.png?itok=1t5C1l7V",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, jungly, chocolate negro, galleta"
   },
   {
     "id": "p-170",
-    "name": "Nestlé jungly blanco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé Jungly Blanco",
+    "desc": "Tableta de chocolate blanco con trocitos de galleta.",
+    "price": 2.1,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Jungly-Blanco.png?itok=a0Y4F8Vb",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, jungly, chocolate blanco, galleta"
   },
   {
     "id": "p-171",
-    "name": "Nestlé jungly leche",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé Jungly Leche",
+    "desc": "La clásica tableta de chocolate con leche y galleta.",
+    "price": 2.1,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Jungly-Leche.png?itok=3D1z9n0B",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, jungly, chocolate con leche, galleta"
   },
   {
     "id": "p-172",
     "name": "Milkybar",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "La clásica tableta de chocolate blanco cremoso de Nestlé.",
+    "price": 1.5,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Milkybar.png?itok=o8X2Y-1G",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, milkybar, chocolate blanco"
   },
   {
     "id": "p-173",
     "name": "Nestlé Filipinos",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Tableta de chocolate con leche con trocitos de galleta Filipinos.",
+    "price": 1.5,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Nestle-Filipinos.png?itok=6F7e9c8G",
     "category": "chocolates",
-    "tags": ""
+    "tags": "nestle, filipinos, chocolate, galleta"
   },
   {
     "id": "p-174",
-    "name": "Nestlé tosta rica",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé Tosta Rica",
+    "desc": "Tableta de chocolate con leche con trocitos de galleta Tosta Rica.",
+    "price": 1.2,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Nestle-Tosta-Rica.png?itok=5y6S_m7E",
     "category": "snacks",
-    "tags": ""
+    "tags": "nestle, tosta rica, chocolate, galleta"
   },
   {
     "id": "p-175",
-    "name": "Nestle maría",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Nestlé María",
+    "desc": "Tableta de chocolate con leche con trocitos de galleta María.",
+    "price": 1.2,
+    "image": "https://www.chocolatesnestle.es/sites/default/files/styles/product_512x512/public/2023-01/Nestle-Maria.png?itok=7U8X3y1O",
     "category": "snacks",
-    "tags": ""
+    "tags": "nestle, galleta maria, chocolate"
   },
   {
     "id": "p-176",
     "name": "Kikonazo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Maíz frito gigante, crujiente y sabroso.",
+    "price": 1.2,
+    "image": "https://grefusa.com/wp-content/uploads/2021/03/Kikonazo-110g.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "kikonazo, grefusa, maiz, kikos"
   },
   {
     "id": "p-177",
-    "name": "Pipas pequeñas reyes",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pipas Pequeñas Reyes",
+    "desc": "Bolsa pequeña de pipas de girasol tostadas.",
+    "price": 1.1,
+    "image": "https://reyes.es/wp-content/uploads/2021/04/TOSTADA-30.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pipas, reyes, girasol"
   },
   {
     "id": "p-178",
-    "name": "Pipas grandes aguasal reyes",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
-    "category": "bebidas",
-    "tags": ""
+    "name": "Pipas Grandes Aguasal Reyes",
+    "desc": "Bolsa grande de pipas de girasol tostadas con agua y sal.",
+    "price": 1.5,
+    "image": "https://reyes.es/wp-content/uploads/2021/04/AGUASAL-90.jpg",
+    "category": "snacks",
+    "tags": "pipas, reyes, girasol, aguasal"
   },
   {
     "id": "p-179",
-    "name": "Pipas grandes naranja reyes",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pipas Grandes Naranja Reyes",
+    "desc": "Bolsa grande de pipas de girasol con un toque de naranja.",
+    "price": 1.1,
+    "image": "https://reyes.es/wp-content/uploads/2021/04/NARANJA-90.jpg",
     "category": "snacks",
-    "tags": ""
+    "tags": "pipas, reyes, girasol, naranja"
   },
   {
     "id": "p-180",
-    "name": "Grefusa mix",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Grefusa Mix",
+    "desc": "Mezcla de los mejores snacks de Grefusa.",
+    "price": 1.1,
+    "image": "https://grefusa.com/wp-content/uploads/2021/03/GrefuMix-100g-1.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "grefusa, mix, snacks"
   },
   {
     "id": "p-181",
     "name": "Pipas Tijuana",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Pipas de girasol con el sabor picante de Tijuana.",
+    "price": 1.1,
+    "image": "https://grefusa.com/wp-content/uploads/2021/03/El-Piponazo-Tijuana-100g.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "pipas, grefusa, tijuana, picante"
   },
   {
     "id": "p-182",
-    "name": "Pipas Grefusa sal",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Pipas Grefusa Sal",
+    "desc": "Pipas de girasol tostadas y con el punto justo de sal.",
+    "price": 1.1,
+    "image": "https://grefusa.com/wp-content/uploads/2021/03/Pipas-G-90g.png",
     "category": "snacks",
-    "tags": ""
+    "tags": "pipas, grefusa, sal"
   },
   {
     "id": "p-183",
-    "name": "Agua pequeña",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Agua Pequeña",
+    "desc": "Botella de agua mineral de 50cl.",
+    "price": 0.6,
+    "image": "https://www.solandebrisas.com/wp-content/uploads/2019/12/50cl-PET-Agua-Mineral-Natural-2.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "agua, pequeña, botella"
   },
   {
     "id": "p-184",
     "name": "Batido Oreo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bebida láctea con sabor a galletas Oreo.",
+    "price": 1.5,
+    "image": "https://www.oreo.es/wp-content/uploads/2023/10/7622201802922_C1N1_ES_b.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "batido, oreo, leche"
   },
   {
     "id": "p-185",
     "name": "Batido Milka",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bebida láctea con el inconfundible sabor del chocolate Milka.",
+    "price": 1.5,
+    "image": "https://www.milka.es/wp-content/uploads/2023/10/7622201802946_C1N1_ES_b.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "batido, milka, leche, chocolate"
   },
   {
     "id": "p-186",
-    "name": "Colacao shake",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "ColaCao Shake",
+    "desc": "Batido de ColaCao listo para tomar en cualquier lugar.",
+    "price": 1.5,
+    "image": "https://www.colacao.es/sites/default/files/2022-04/colacao-shake-200ml.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "colacao, batido, shake, cacao"
   },
   {
     "id": "p-187",
-    "name": "Tiamo expresso",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tiamo Espresso",
+    "desc": "Café frío listo para tomar, sabor espresso.",
+    "price": 1.5,
+    "image": "https://www.kelsa.es/wp-content/uploads/2020/06/Tiamo-Expresso.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "tiamo, cafe, espresso, frio"
   },
   {
     "id": "p-188",
-    "name": "Tiamo capuccino",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tiamo Cappuccino",
+    "desc": "Café frío listo para tomar, sabor cappuccino.",
+    "price": 1.5,
+    "image": "https://www.kelsa.es/wp-content/uploads/2020/06/Tiamo-Cappuccino.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "tiamo, cafe, cappuccino, frio"
   },
   {
     "id": "p-189",
-    "name": "Tiamo macchiato",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Tiamo Macchiato",
+    "desc": "Café frío listo para tomar, sabor macchiato.",
+    "price": 1.5,
+    "image": "https://www.kelsa.es/wp-content/uploads/2020/06/Tiamo-Macchiato.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "tiamo, cafe, macchiato, frio"
   },
   {
     "id": "p-190",
-    "name": "Fanta naranja",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Naranja",
+    "desc": "Refresco con el clásico e inconfundible sabor a naranja.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fanta-naranja-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, naranja"
   },
   {
     "id": "p-191",
-    "name": "Fanta limón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Limón",
+    "desc": "Refresco con un intenso y refrescante sabor a limón.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fanta-limon-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, limon"
   },
   {
     "id": "p-192",
-    "name": "Aquarius melocotón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Aquarius Melocotón",
+    "desc": "Bebida refrescante sin gas con sabor a melocotón.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/aquarius-melocoton-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "aquarius, refresco, melocoton"
   },
   {
     "id": "p-193",
-    "name": "Coca-Cola lata",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Lata",
+    "desc": "Lata de Coca-Cola sabor original.",
+    "price": 1.4,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-sabor-original-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, original, lata"
   },
   {
     "id": "p-194",
-    "name": "Coca-Cola zero lata",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Zero Lata",
+    "desc": "Lata de Coca-Cola Zero Azúcar.",
+    "price": 1.4,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-zero-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, zero, sin azucar, lata"
   },
   {
     "id": "p-195",
-    "name": "Coca-Cola cherry",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Cherry",
+    "desc": "Refresco de cola con un delicioso sabor a cereza.",
+    "price": 1.4,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-cherry-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, cherry, cereza"
   },
   {
     "id": "p-196",
-    "name": "Coca-Cola Oreo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Creations",
+    "desc": "Edición limitada de Coca-Cola con sabores sorprendentes.",
+    "price": 1.4,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-creations-k-wave-zero-azucar-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, creations, edicion limitada"
   },
   {
     "id": "p-197",
-    "name": "Fuze tea limón zero",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fuze Tea Limón Zero",
+    "desc": "Té helado con sabor a limón, sin azúcar.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fuze-tea-limon-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fuze tea, te, limon, zero, sin azucar"
   },
   {
     "id": "p-198",
-    "name": "Fuze tea limón",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fuze Tea Limón",
+    "desc": "Té helado con sabor a limón.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fuze-tea-limon-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fuze tea, te, limon"
   },
   {
     "id": "p-199",
-    "name": "Fuze tea maracuyá",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fuze Tea Maracuyá",
+    "desc": "Té helado con sabor a maracuyá.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fuze-tea-maracuya-330-ml-lata.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fuze tea, te, maracuya"
   },
   {
     "id": "p-200",
-    "name": "Simon mandarina",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Simon Mandarina",
+    "desc": "Zumo de mandarina en formato brik.",
+    "price": 1.5,
+    "image": "https://simonlife.es/wp-content/uploads/2021/04/nectar-mandarina-200-ml-1.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "simon life, zumo, mandarina"
   },
   {
     "id": "p-201",
-    "name": "Simon mango",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Simon Mango",
+    "desc": "Zumo de mango en formato brik.",
+    "price": 1.5,
+    "image": "https://simonlife.es/wp-content/uploads/2021/04/nectar-mango-200-ml-1.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "simon life, zumo, mango"
   },
   {
     "id": "p-202",
     "name": "Refresquillo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bebida refrescante de sabores variados para congelar.",
+    "price": 1.5,
+    "image": "https://kelia.es/wp-content/uploads/2021/05/refresquillo.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "refresquillo, polo, congelar"
   },
   {
     "id": "p-203",
     "name": "Coca-Cola 2L",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Botella de 2 litros de Coca-Cola sabor original.",
+    "price": 2.2,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-sabor-original-2-l-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, 2l, original"
   },
   {
     "id": "p-204",
-    "name": "Coca-Cola zero zero 2L",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Coca-Cola Zero 2L",
+    "desc": "Botella de 2 litros de Coca-Cola Zero Azúcar.",
+    "price": 2.2,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/coca-cola-zero-2-l-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "coca-cola, refresco, 2l, zero, sin azucar"
   },
   {
     "id": "p-205",
-    "name": "Fanta naranja 2L",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Naranja 2L",
+    "desc": "Botella de 2 litros de Fanta Naranja.",
+    "price": 2.2,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fanta-naranja-2-l-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, 2l, naranja"
   },
   {
     "id": "p-206",
-    "name": "Fanta limón 2L",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Fanta Limón 2L",
+    "desc": "Botella de 2 litros de Fanta Limón.",
+    "price": 2.2,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/fanta-limon-2-l-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "fanta, refresco, 2l, limon"
   },
   {
     "id": "p-207",
-    "name": "Powerade citrus",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Powerade Citrus",
+    "desc": "Bebida deportiva con sabor a cítricos.",
+    "price": 1.7,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/powerade-citrus-500-ml-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "powerade, bebida deportiva, citrus"
   },
   {
     "id": "p-208",
-    "name": "Powerade ice",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Powerade Ice Storm",
+    "desc": "Bebida deportiva sabor Ice Storm (frambuesa azul).",
+    "price": 1.7,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/powerade-ice-storm-500-ml-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "powerade, bebida deportiva, ice storm"
   },
   {
     "id": "p-209",
-    "name": "Powerade Blood",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Powerade Blood Orange",
+    "desc": "Bebida deportiva con sabor a naranja sanguina.",
+    "price": 1.7,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/products/powerade-blood-orange-500-ml-botella.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "powerade, bebida deportiva, blood orange, naranja"
   },
   {
     "id": "p-210",
     "name": "Reign",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bebida energética con BCAA, cafeína natural y sin azúcar.",
+    "price": 2,
+    "image": "https://www.reignbodyfuel.com/media/uploads_image/2021/10/25/11/49/09/RBF_Web_Core_CanRenders_Reignbow-Sherbet_ES.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "reign, bebida energetica, bcaa"
   },
   {
     "id": "p-211",
-    "name": "Ener drink zero",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Zero",
+    "desc": "Bebida energética sin azúcar de Eneryeti.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-zero.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, zero, sin azucar"
   },
   {
     "id": "p-212",
-    "name": "Ener drink coco",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Coco",
+    "desc": "Bebida energética con un exótico sabor a coco.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2022/04/eny-coconut-lata-500ml.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, coco"
   },
   {
     "id": "p-213",
-    "name": "Ener drink original",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Original",
+    "desc": "El sabor original de la bebida energética Eneryeti.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-original.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, original"
   },
   {
     "id": "p-214",
-    "name": "Ener drink tarta de queso",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Tarta de Queso",
+    "desc": "Bebida energética con sabor a tarta de queso.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2022/02/cheesecake-lata-500ml-web.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, tarta de queso"
   },
   {
     "id": "p-215",
-    "name": "Ener drink watermelon",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Watermelon",
+    "desc": "Bebida energética con refrescante sabor a sandía.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-watermelon.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, watermelon, sandia"
   },
   {
     "id": "p-216",
-    "name": "Ener drink mora",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Mora",
+    "desc": "Bebida energética con un intenso sabor a mora.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-blackberry.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, mora"
   },
   {
     "id": "p-217",
-    "name": "Ener drink fresa",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Fresa",
+    "desc": "Bebida energética con un dulce sabor a fresa.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-fresa.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, fresa"
   },
   {
     "id": "p-218",
-    "name": "Ener drink manzana",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Manzana",
+    "desc": "Bebida energética con sabor a manzana verde.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-manzana.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, manzana"
   },
   {
     "id": "p-219",
-    "name": "Ener drink piña",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Piña",
+    "desc": "Bebida energética con sabor tropical a piña.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-pina.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, piña"
   },
   {
     "id": "p-220",
-    "name": "Sprite vodka",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Sprite Vodka",
+    "desc": "Bebida premezclada de Sprite con vodka.",
+    "price": 1.3,
+    "image": "https://www.coca-cola.com/content/dam/onexp/es/es/brands/sprite/Sprite-Limon-y-Vodka-RD.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "sprite, vodka, alcohol"
   },
   {
     "id": "p-221",
-    "name": "Ener drink ácido",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Eneryeti Ácido",
+    "desc": "Bebida energética con un toque extra ácido.",
+    "price": 1.2,
+    "image": "https://eneryeti.es/wp-content/uploads/2021/04/eneryeti-acid.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "eneryeti, bebida energetica, acido"
   },
   {
     "id": "p-222",
     "name": "Powerking",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Bebida energética para un impulso de energía.",
+    "price": 1.5,
+    "image": "https://world.openfoodfacts.org/images/products/8410751010041/front_es.3.full.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "powerking, bebida energetica"
   },
   {
     "id": "p-223",
     "name": "Red Bull",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "La clásica bebida energética Red Bull.",
+    "price": 2,
+    "image": "https://www.redbull.com/energydrink/v1/resources/content/v1/media/2513909724001/2429813200001-2095034177/1/DACH_product-can.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "red bull, bebida energetica"
   },
   {
     "id": "p-224",
-    "name": "Red Bull zero",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Red Bull Zero",
+    "desc": "La clásica bebida energética Red Bull, sin azúcar.",
+    "price": 2,
+    "image": "https://www.redbull.com/energydrink/v1/resources/content/v1/media/2513909724001/878652392001-1406606869/1/DACH_product-can.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "red bull, bebida energetica, zero, sin azucar"
   },
   {
     "id": "p-225",
     "name": "Litrona",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "desc": "Botella de cerveza de 1 litro.",
+    "price": 1.5,
+    "image": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202204/26/00118633000618____3__600x600.jpg",
     "category": "bebidas",
-    "tags": ""
+    "tags": "cerveza, litrona, alcohol"
   },
   {
     "id": "p-226",
-    "name": "Cerveza molen 0%",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Cerveza Molen 0%",
+    "desc": "Cerveza sin alcohol tipo lager.",
+    "price": 1.5,
+    "image": "https://www.molenbier.com/wp-content/uploads/2021/03/Lata-tostada-00-50cl-Molen-Bier.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "cerveza, sin alcohol, 0%"
   },
   {
     "id": "p-227",
-    "name": "Cerveza pequeña Cruzcampo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Cerveza Pequeña Cruzcampo",
+    "desc": "Lata de 33cl de cerveza Cruzcampo.",
+    "price": 1,
+    "image": "https://www.cruzcampo.es/media/fhhz0zxe/lata-cruzcampo-pilsen-33cl-v2.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "cerveza, cruzcampo, pequeña, lata, alcohol"
   },
   {
     "id": "p-228",
-    "name": "Cerveza grande Cruzcampo",
-    "desc": "",
-    "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "name": "Cerveza Grande Cruzcampo",
+    "desc": "Lata de 50cl de cerveza Cruzcampo.",
+    "price": 1.5,
+    "image": "https://www.cruzcampo.es/media/01n1bxxs/lata-50cl-cruzcampo-pilsen.png",
     "category": "bebidas",
-    "tags": ""
+    "tags": "cerveza, cruzcampo, grande, lata, alcohol"
   }
 ]
