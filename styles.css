@@ -337,3 +337,42 @@ header.container{
   margin: 0;
   color: var(--muted);
 }
+
+/* === Thumb & image fixes === */
+.card .thumb{
+  width:100%;
+  aspect-ratio: 4/3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: #f3f4f6;
+  overflow:hidden;
+}
+.card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  display:block;
+}
+
+/* === MEJORAS CESTA === */
+.cart-actions {
+  display: block;
+  margin-top: 8px;
+}
+#cartCheckout {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--brand);
+  color: #fff;
+}
+#cartCheckout:hover {
+  background: var(--brand-dark);
+}
+#cartCheckout:disabled {
+  background: #d1d5db; /* gris claro */
+  cursor: not-allowed;
+  color: var(--muted);
+}
