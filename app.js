@@ -1,4 +1,3 @@
-
 // Minimal robust app.js
 
 const fmtEUR = (n) => new Intl.NumberFormat("es-ES", {style:"currency", currency:"EUR"}).format(n ?? 0);
@@ -29,16 +28,19 @@ function hydrateChips(items){
 
 function buildCard(p){
   const el=document.createElement("article"); el.className="card product-card";
+  // HTML corregido para que coincida con los estilos del CSS (.body, .name, .price, .add-btn)
   el.innerHTML=`
     <div class="thumb"><img src="${p.image || 'assets/img/default-product.svg'}" alt="${p.name}" onerror="this.src='assets/img/default-product.svg'"></div>
-    <div class="nb">
-      <span class="badge">${p.category||""}</span>
-      <h3>${p.name||""}</h3>
+    <div class="body">
+      <div class="meta">
+        <span class="badge">${p.category||""}</span>
+        <span class="price">${fmtEUR(p.price)}</span>
+      </div>
+      <h3 class="name">${p.name||""}</h3>
       <p class="muted">${p.desc||""}</p>
-      <div><strong>${fmtEUR(p.price)}</strong></div>
-      <button class="btn" data-id="${p.id}">Añadir</button>
+      <button class="add-btn" data-id="${p.id}">Añadir</button>
     </div>`;
-  el.querySelector(".btn").addEventListener("click", ()=> addToCart(p.id));
+  el.querySelector(".add-btn").addEventListener("click", ()=> addToCart(p.id));
   return el;
 }
 
@@ -50,6 +52,14 @@ function renderGrid(list){
 function applyFilters(){
   let list=[...state.products];
   if(state.category!=="all") list=list.filter(p=>p.category===state.category);
+
+  // Lógica de ordenación
+  const sort = state.sort;
+  if(sort === "name-asc") list.sort((a,b) => (a.name||"").localeCompare(b.name||""));
+  if(sort === "name-desc") list.sort((a,b) => (b.name||"").localeCompare(a.name||""));
+  if(sort === "price-asc") list.sort((a,b) => (a.price||0) - (b.price||0));
+  if(sort === "price-desc") list.sort((a,b) => (b.price||0) - (a.price||0));
+  
   state.filtered=list; renderGrid(list);
 }
 
@@ -116,4 +126,13 @@ function boot(){
   hydrateChips(state.products); applyFilters();
 }
 
-document.addEventListener("DOMContentLoaded", ()=>{ boot(); attachCartUI(); });
+document.addEventListener("DOMContentLoaded", ()=>{
+  boot();
+  attachCartUI();
+  
+  // Añadir listener para el selector de ordenación
+  document.getElementById("sort")?.addEventListener("change", (e)=>{
+    state.sort = e.target.value;
+    applyFilters();
+  });
+});

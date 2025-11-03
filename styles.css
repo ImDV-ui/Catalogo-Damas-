@@ -62,7 +62,7 @@ header.container{
 
 .controls{
   display:grid;
-  grid-template-columns: 1fr 180px 220px;
+  grid-template-columns: 1fr 220px;
   gap:.75rem;
 }
 .controls input, .controls select{
