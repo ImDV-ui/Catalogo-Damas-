@@ -1,264 +1,119 @@
 
-// ---- Currency formatter ----
-const fmtEUR = (n) => new Intl.NumberFormat('es-ES',{style:'currency', currency:'EUR'}).format(n);
+// Minimal robust app.js
 
-// ---- State ----
-const state = {
-  products: [],
-  filtered: [],
-  category: 'all',
-  search: '',
-  sort: 'name-asc',
-  cart: {}
-};
+const fmtEUR = (n) => new Intl.NumberFormat("es-ES", {style:"currency", currency:"EUR"}).format(n ?? 0);
+const state = { products: [], filtered: [], category:"all", search:"", sort:"name-asc", cart:{} };
 
-// ---- Elements ----
-const els = {
-  grid: document.getElementById('grid'),
-  category: document.getElementById('category'),
-  search: document.getElementById('search'),
-  sort: document.getElementById('sort'),
-  year: document.getElementById('year'),
-  toTop: document.getElementById('toTop'),
-  newsGrid: document.getElementById('newsGrid'),
-  cartBtn: document.getElementById('cartBtn'),
-  cartCount: document.getElementById('cartCount'),
-  drawer: document.getElementById('drawer'),
-  overlay: document.getElementById('overlay'),
-  drawerClose: document.getElementById('drawerClose'),
-  cartItems: document.getElementById('cartItems'),
-  cartTotal: document.getElementById('cartTotal'),
-  clearCart: document.getElementById('clearCart'),
-  checkout: document.getElementById('checkout'),
-};
-
-if(els.year) els.year.textContent = new Date().getFullYear();
-if(els.toTop) els.toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
-
-// ---- Load data (fetch + fallback) ----
-fetch('data/products.json')
-  .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-  .then(data => {
-    if(!Array.isArray(data) || !data.length) {
-      console.warn('[DAMAS] JSON vacío; usando datos de ejemplo.');
-      data = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
-    } else {
-      console.info('[DAMAS] Catálogo cargado correctamente.');
-    }
-    state.products = data.map((p,i) => ({ id: p.id || String(i+1), ...p }));
-    hydrateCategoryFilter(state.products);
-    renderChips?.(state.products);
-    renderChips?.(state.products);
-    loadCart(); renderCart();
-    hydrateNews();
-    applyFilters();
-  })
-  .catch(err => {
-    console.error('[DAMAS] No se pudo cargar data/products.json ('+err.message+'). Usando datos de prueba.');
-    state.products = [{"id": "f001", "name": "Pringles Sour Cream & Onion", "price": 2.3, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pringles-165g-to-134g.jpg", "category": "snacks", "desc": "Sabor crema agria y cebolla", "isNew": true}, {"id": "f010", "name": "Doritos Tex-Mex", "price": 1.8, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doritos%20bag.jpg", "category": "snacks", "desc": "Crujientes con toque picante", "isNew": true}, {"id": "f020", "name": "Red Bull 250ml", "price": 2.1, "image": "https://commons.wikimedia.org/wiki/Special:FilePath/8.4_floz_can_of_Red_Bull_Energy_Drink.jpg", "category": "bebidas", "desc": "Clásico energy 250ml", "isNew": true}];
-    hydrateCategoryFilter(state.products);
-    renderChips?.(state.products);
-    renderChips?.(state.products);
-    loadCart(); renderCart();
-    hydrateNews();
-    applyFilters();
-  });
-
-// ---- Helpers ----
-function hydrateCategoryFilter(items){
-  if(!els.category) return;
-  const cats = Array.from(new Set(items.map(i => i.category))).sort();
-  els.category.innerHTML = '<option value="all">Todas las categorías</option>';
-  cats.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat; opt.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    els.category.appendChild(opt);
-  });
-
-function renderChips(items){
-  const host = document.getElementById('catChips');
-  if(!host) return;
-  const cats = Array.from(new Set(items.map(i => i.category))).sort();
-  host.innerHTML = '';
-
-  const all = document.createElement('button');
-  all.className = 'chip' + (state.category === 'all' ? ' active' : '');
-  all.dataset.cat = 'all';
-  all.textContent = 'Todas';
-  host.appendChild(all);
-
-  cats.forEach(cat => {
-    const b = document.createElement('button');
-    b.className = 'chip' + (state.category === cat ? ' active' : '');
-    b.dataset.cat = cat;
-    b.textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    host.appendChild(b);
-  });
-}
+function $(s){ return document.querySelector(s); }
+function readEmbeddedProducts(){
+  const tag = document.getElementById("products-data");
+  if(!tag) return [];
+  try{ const data = JSON.parse(tag.textContent||"[]"); return Array.isArray(data)?data:[]; }catch(_){ return []; }
 }
 
-function hydrateNews(){
-  if(!els.newsGrid) return;
-  const news = state.products.filter(p => p.isNew).slice(0,3);
-  els.newsGrid.innerHTML = '';
-  if(!news.length) return;
-  const frag = document.createDocumentFragment();
-  news.forEach(n => {
-    const card = document.createElement('article');
-    card.className = 'news-card';
-    card.innerHTML = `
-      <img src="${n.image}" alt="${n.name}">
-      <div class="nb">
-        <span class="badge">${n.category}</span>
-        <h3>${n.name}</h3>
-        <p class="muted">${n.desc || ''}</p>
-        <div><strong>${fmtEUR(n.price)}</strong></div>
-        <button class="btn" data-id="${n.id}">Añadir</button>
-      </div>`;
-    card.querySelector('.btn').addEventListener('click', () => addToCart(n.id));
-    frag.appendChild(card);
+function ensurePrices(){
+  state.products = (state.products||[]).map(p=>{
+    const price = Number(p.price||0);
+    if(!price) p.price = 1.00;
+    return p;
   });
-  els.newsGrid.appendChild(frag);
 }
 
-// ---- Events ----
-if(els.category) els.category.addEventListener('change', () => { state.category = els.category.value; renderChips?.(state.products); applyFilters(); });
-if(els.search) els.search.addEventListener('input', () => { state.search = els.search.value; applyFilters(); });
-if(els.sort) els.sort.addEventListener('change', () => { state.sort = els.sort.value; applyFilters(); });
-
-if(els.cartBtn) els.cartBtn.addEventListener('click', openDrawer);
-if(els.drawerClose) els.drawerClose.addEventListener('click', closeDrawer);
-if(els.overlay) els.overlay.addEventListener('click', closeDrawer);
-
-function openDrawer(){ if(els.drawer){ els.drawer.classList.add('open'); if(els.overlay) els.overlay.hidden = false; els.drawer.setAttribute('aria-hidden','false'); } }
-function closeDrawer(){ if(els.drawer){ els.drawer.classList.remove('open'); if(els.overlay) els.overlay.hidden = true; els.drawer.setAttribute('aria-hidden','true'); } }
-
-if(els.clearCart) els.clearCart.addEventListener('click', () => { state.cart = {}; saveCart(); renderCart(); });
-if(els.checkout) els.checkout.addEventListener('click', () => { alert('Checkout de demostración.'); });
-
-// ---- Filtering ----
-function applyFilters(){
-  if(!els.grid) return;
-  let list = [...state.products];
-  if(state.category !== 'all') list = list.filter(p => p.category === state.category);
-  const q = (state.search||'').trim().toLowerCase();
-  if(q) list = list.filter(p => (p.name + ' ' + (p.tags||'')).toLowerCase().includes(q));
-  const [field, dir] = state.sort.split('-');
-  list.sort((a,b) => {
-    if(field === 'name') return dir === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-    if(field === 'price') return dir === 'asc' ? a.price - b.price : b.price - a.price;
-    return 0;
-  });
-  state.filtered = list;
-  render();
+function hydrateChips(items){
+  const host = document.getElementById("catChips"); if(!host) return;
+  host.innerHTML = "";
+  const cats = Array.from(new Set(items.map(p=>p.category))).filter(Boolean).sort();
+  const mk = (cat,label,active)=>{ const b=document.createElement("button"); b.className="chip"+(active?" active":""); b.dataset.cat=cat; b.textContent=label; b.onclick=()=>{ host.querySelectorAll(".chip").forEach(x=>x.classList.remove("active")); b.classList.add("active"); state.category=cat; applyFilters(); }; host.appendChild(b); };
+  mk("all","Todas",true); cats.forEach(c=> mk(c, c.charAt(0).toUpperCase()+c.slice(1)));
 }
 
-// ---- Render grid ----
-function render(){
-  els.grid.innerHTML = '';
-  if(!state.filtered.length){ els.grid.innerHTML = '<p>No hay productos que coincidan.</p>'; return; }
-  const frag = document.createDocumentFragment();
-  state.filtered.forEach(p => frag.appendChild(card(p)));
-  els.grid.appendChild(frag);
-}
-
-function card(p){
-  const article = document.createElement('article');
-  article.className = 'card';
-  article.innerHTML = `
-    <img class="thumb" src="${p.image}" alt="${p.name}">
-    <div class="body">
-      <div class="meta">
-        <span class="badge">${p.category}</span>
-        <span class="price">${fmtEUR(p.price)}</span>
-      </div>
-      <h3 class="name">${p.name}</h3>
-      <button class="add-btn" type="button" data-id="${p.id}">Añadir</button>
+function buildCard(p){
+  const el=document.createElement("article"); el.className="card product-card";
+  el.innerHTML=`
+    <div class="thumb"><img src="${p.image || 'assets/img/default-product.svg'}" alt="${p.name}" onerror="this.src='assets/img/default-product.svg'"></div>
+    <div class="nb">
+      <span class="badge">${p.category||""}</span>
+      <h3>${p.name||""}</h3>
+      <p class="muted">${p.desc||""}</p>
+      <div><strong>${fmtEUR(p.price)}</strong></div>
+      <button class="btn" data-id="${p.id}">Añadir</button>
     </div>`;
-  article.querySelector('.add-btn').addEventListener('click', () => addToCart(p.id));
-  return article;
+  el.querySelector(".btn").addEventListener("click", ()=> addToCart(p.id));
+  return el;
 }
 
-// ---- Cart ----
-function loadCart(){
-  try{ const raw = localStorage.getItem('damas_cart'); if(raw) state.cart = JSON.parse(raw) || {}; }catch(e){ state.cart = {}; }
-  updateCount();
+function renderGrid(list){
+  const grid = document.getElementById("grid"); if(!grid) return;
+  grid.innerHTML=""; const f=document.createDocumentFragment(); list.forEach(p=> f.appendChild(buildCard(p))); grid.appendChild(f);
 }
-function saveCart(){
-  localStorage.setItem('damas_cart', JSON.stringify(state.cart));
-  updateCount();
+
+function applyFilters(){
+  let list=[...state.products];
+  if(state.category!=="all") list=list.filter(p=>p.category===state.category);
+  state.filtered=list; renderGrid(list);
 }
-function updateCount(){
-  if(!els.cartCount) return;
-  const count = Object.values(state.cart).reduce((a, it) => a + it.qty, 0);
-  els.cartCount.textContent = String(count);
-}
-function addToCart(id){
-  const prod = state.products.find(p => p.id === id);
-  if(!prod) return;
-  if(!state.cart[id]) state.cart[id] = { ...prod, qty: 0 };
-  state.cart[id].qty++;
-  saveCart(); renderCart(); openDrawer();
-}
-function changeQty(id, delta){
-  if(!state.cart[id]) return;
-  state.cart[id].qty += delta;
-  if(state.cart[id].qty <= 0) delete state.cart[id];
-  saveCart(); renderCart();
-}
-function removeItem(id){
-  delete state.cart[id]; saveCart(); renderCart();
+
+// --- CART ---
+function updateCartCount(){
+  const count = Object.values(state.cart||{}).reduce((a,b)=>a+b,0);
+  const c = document.getElementById("cartCount"); if(c) c.textContent = count;
+  try{ localStorage.setItem("cart", JSON.stringify(state.cart||{})); }catch(_){}
 }
 function renderCart(){
-  if(!els.cartItems || !els.cartTotal) return;
-  const items = Object.values(state.cart);
-  if(!items.length){ els.cartItems.innerHTML = '<p>Tu carrito está vacío.</p>'; els.cartTotal.textContent = fmtEUR(0); return; }
-  els.cartItems.innerHTML = '';
-  const frag = document.createDocumentFragment();
-  let total = 0;
-  items.forEach(it => {
-    total += it.price * it.qty;
-    const row = document.createElement('div');
-    row.className = 'cart-row';
-    row.innerHTML = `
-      <img src="${it.image}" alt="${it.name}">
+  const listEl = document.getElementById("cartList"); const totalEl = document.querySelector("#cartTotal, [data-cart-total]");
+  if(!listEl || !totalEl) return;
+  const map = new Map((state.products||[]).map(p=>[p.id,p]));
+  listEl.innerHTML=""; let total=0;
+  Object.entries(state.cart||{}).forEach(([id,qty])=>{
+    const p = map.get(id); if(!p) return; total += (p.price||0)*qty;
+    const item=document.createElement("div"); item.className="cart-item";
+    item.innerHTML=`
+      <img src="${p.image || 'assets/img/default-product.svg'}" alt="${p.name}">
       <div>
-        <div class="name">${it.name}</div>
-        <div class="price-sm">${fmtEUR(it.price)}</div>
-        <button class="rm-btn" aria-label="Eliminar">Eliminar</button>
+        <h4>${p.name}</h4>
+        <div class="cart-qty">
+          <button class="qty-btn" data-op="dec" data-id="${id}">−</button>
+          <span class="qty">${qty}</span>
+          <button class="qty-btn" data-op="inc" data-id="${id}">+</button>
+          <button class="qty-btn" data-op="del" data-id="${id}" title="Eliminar">🗑</button>
+        </div>
       </div>
-      <div class="qty">
-        <button aria-label="Disminuir">−</button>
-        <strong>${it.qty}</strong>
-        <button aria-label="Aumentar">+</button>
-      </div>`;
-    const [minus, plus] = row.querySelectorAll('.qty button');
-    const rm = row.querySelector('.rm-btn');
-    minus.addEventListener('click', () => changeQty(it.id, -1));
-    plus.addEventListener('click', () => changeQty(it.id, +1));
-    rm.addEventListener('click', () => removeItem(it.id));
-    frag.appendChild(row);
+      <div><strong>${fmtEUR((p.price||0)*qty)}</strong></div>`;
+    listEl.appendChild(item);
   });
-  els.cartItems.appendChild(frag);
-  els.cartTotal.textContent = fmtEUR(total);
+  totalEl.textContent = fmtEUR(total);
+  const checkout=document.getElementById("cartCheckout"); if(checkout) checkout.toggleAttribute("disabled", total<=0);
+  updateCartCount();
+}
+function addToCart(id){ state.cart[id]=(state.cart[id]||0)+1; renderCart(); }
+function attachCartUI(){
+  try{ state.cart=JSON.parse(localStorage.getItem("cart")||"{}")||{}; }catch(_){ state.cart={}; }
+  updateCartCount();
+  document.getElementById("cartBtn")?.addEventListener("click", ()=> document.getElementById("cartDrawer")?.classList.add("open"));
+  document.getElementById("cartClose")?.addEventListener("click", ()=> document.getElementById("cartDrawer")?.classList.remove("open"));
+  document.getElementById("cartBackdrop")?.addEventListener("click", ()=> document.getElementById("cartDrawer")?.classList.remove("open"));
+  document.getElementById("cartClear")?.addEventListener("click", ()=> { state.cart={}; renderCart(); });
+  document.getElementById("cartList")?.addEventListener("click", (e)=>{
+    const btn = e.target.closest(".qty-btn"); if(!btn) return;
+    const id=btn.dataset.id; const op=btn.dataset.op;
+    if(op==="inc") state.cart[id]=(state.cart[id]||0)+1;
+    if(op==="dec"){ state.cart[id]=Math.max(0,(state.cart[id]||0)-1); if(state.cart[id]===0) delete state.cart[id]; }
+    if(op==="del") delete state.cart[id];
+    renderCart();
+  });
+  document.getElementById("cartCheckout")?.addEventListener("click", ()=>{
+    const map = new Map((state.products||[]).map(p=>[p.id,p])); let lines=[], total=0;
+    Object.entries(state.cart||{}).forEach(([id,qty])=>{ const p=map.get(id); if(!p) return; total+=(p.price||0)*qty; lines.push(`${qty} x ${p.name}`); });
+    const msg = encodeURIComponent(`Pedido Damas:\\n${lines.join("\\n")}\\n\\nTotal: ${fmtEUR(total)}`);
+    window.open("https://wa.me/?text="+msg,"_blank");
+  });
+  renderCart();
 }
 
+// --- Boot ---
+function boot(){
+  state.products = readEmbeddedProducts(); ensurePrices();
+  hydrateChips(state.products); applyFilters();
+}
 
-document.addEventListener('click', (e) => {
-  if (e.target.matches('.badge')) {
-    const cat = e.target.textContent.trim();
-    state.category = cat;
-    if (els.category) els.category.value = cat;
-    renderChips?.(state.products);
-    applyFilters();
-    document.getElementById('grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-  if (e.target.matches('.chip')) {
-    const cat = e.target.dataset.cat;
-    state.category = cat;
-    if (els.category) els.category.value = cat;
-    renderChips?.(state.products);
-    applyFilters();
-    document.getElementById('grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-});
+document.addEventListener("DOMContentLoaded", ()=>{ boot(); attachCartUI(); });
