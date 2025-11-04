@@ -13,7 +13,7 @@
     "name": "Monster Lewis",
     "desc": "",
     "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Monster-lewis.png",
     "category": "bebidas",
     "tags": ""
   },
@@ -877,7 +877,7 @@
     "name": "Agua grande",
     "desc": "",
     "price": 0.0,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Agua-grande.png",
     "category": "bebidas",
     "tags": ""
   },
