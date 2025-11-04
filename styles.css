@@ -373,6 +373,7 @@ header.container{
   background: #d1d5db; /* gris claro */
   cursor: not-allowed;
   color: var(--muted);
+<<<<<<< HEAD
 }
 
 /* --- MEJORAS PARA MÓVILES --- */
@@ -384,4 +385,6 @@ header.container{
   .titles h1 {
     font-size: 1.2rem; /* Reduce un poco el título para que no se corte */
   }
+=======
+>>>>>>> fc4eba93d20101197d1f0551294d4a3f6227aaf8
 }
