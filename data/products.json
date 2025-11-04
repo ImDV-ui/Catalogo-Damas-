@@ -175,7 +175,7 @@
     "name": "Huevo Kinder",
     "desc": "",
     "price": 1.4,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Kinder-sorpresa.png",
     "category": "chocolates",
     "tags": ""
   },
@@ -184,7 +184,7 @@
     "name": "Kinder bueno mini",
     "desc": "",
     "price": 1.4,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Kinder-mini.png",
     "category": "chocolates",
     "tags": ""
   },
@@ -526,7 +526,7 @@
     "name": "Algodón de azucar",
     "desc": "",
     "price": 1.0,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Algodon-azucar.png",
     "category": "chuches",
     "tags": ""
   },
@@ -805,7 +805,7 @@
     "name": "Hanuta",
     "desc": "",
     "price": 1.5,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Hanuta.png",
     "category": "chocolates",
     "tags": ""
   },
@@ -886,7 +886,7 @@
     "name": "Agua pequeña",
     "desc": "",
     "price": 0.6,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Agua-pequeña.png",
     "category": "bebidas",
     "tags": ""
   },
@@ -1714,7 +1714,7 @@
     "name": "Aquarius melocotón",
     "desc": "",
     "price": 1.3,
-    "image": "assets/img/default-product.svg",
+    "image": "assets/img/Aquarius-melocotón.png",
     "category": "bebidas",
     "tags": ""
   },
