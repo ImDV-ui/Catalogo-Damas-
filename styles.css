@@ -41,6 +41,7 @@ header.container{
   gap:1rem;
   align-items:center;
   padding-top:1.25rem;
+  padding-bottom: 0;
 }
 
 .brand{
@@ -64,6 +65,7 @@ header.container{
   display:grid;
   grid-template-columns: 1fr 220px;
   gap:.75rem;
+  margin-top: .5rem;
 }
 .controls input, .controls select{
   appearance:none;
@@ -141,7 +143,7 @@ header.container{
 .topbar{
   position:sticky; top:0; background:rgba(255,255,255,.85); backdrop-filter: blur(8px);
   z-index:10; border-bottom:1px solid rgba(0,0,0,.06);
-  display:grid; grid-template-columns: 1fr auto; align-items:center; gap:1rem; padding: .75rem 0 0;
+  display:grid; grid-template-columns: 1fr auto; align-items:center; gap:1rem; padding-top: .75rem; padding-bottom: .75rem;
 }
 .actions{ display:flex; align-items:center; gap:.5rem; }
 .cart-btn{
@@ -212,10 +214,6 @@ header.container{
 .qty button{ border:0; background:#e2e8f0; padding:.25rem .5rem; border-radius:8px; cursor:pointer }
 .price-sm{ font-weight:800; color:var(--brand-dark) }
 .rm-btn{ border:0; background:transparent; color:#ef4444; cursor:pointer }
-
-/* Controls spacing tweak under sticky topbar */
-.controls{ margin-top:.5rem }
-
 
 /* Chips de categorías */
 .chips{
@@ -375,4 +373,15 @@ header.container{
   background: #d1d5db; /* gris claro */
   cursor: not-allowed;
   color: var(--muted);
+}
+
+/* --- MEJORAS PARA MÓVILES --- */
+@media (max-width: 619px) {
+  .controls {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+
+  .titles h1 {
+    font-size: 1.2rem; /* Reduce un poco el título para que no se corte */
+  }
 }
