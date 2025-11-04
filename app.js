@@ -248,6 +248,18 @@ function initCart(){
 
 function boot(){
   loadProductData().then(()=>{
+    // Elimina productos duplicados por nombre antes de renderizar
+    const uniqueProducts = [];
+    const seenNames = new Set();
+    for (const product of state.products) {
+      const productName = (product.name || "").trim().toLowerCase();
+      if (!seenNames.has(productName)) {
+        uniqueProducts.push(product);
+        seenNames.add(productName);
+      }
+    }
+    state.products = uniqueProducts;
+
     hydrateChips(state.products);
     applyFilters();
     initCart();
