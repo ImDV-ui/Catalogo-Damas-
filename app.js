@@ -1,5 +1,3 @@
-// App.js con mejoras en la cesta
-
 const fmtEUR = (n) => new Intl.NumberFormat("es-ES", {style:"currency", currency:"EUR"}).format(n ?? 0);
 const state = { products: [], filtered: [], category:"all", search:"", sort:"name-asc", cart:{} };
 
