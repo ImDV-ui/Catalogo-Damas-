@@ -13,6 +13,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/logo.png" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+<style>
+/* Contacto — botón y sección */
+html { scroll-behavior: smooth; }
+.topbar { position: sticky; top: 0; z-index: 1000; background: #ece9ff; border-bottom: 1px solid #e3e3e3; }
+.topbar-inner { max-width: 1200px; margin: 0 auto; padding: 10px 16px; display: flex; justify-content: flex-end; }
+.btn-contacto { padding: 8px 14px; border-radius: 10px; border: 1px solid #5a2bd1; color: #5a2bd1; font-weight: 600; text-decoration: none; }
+.btn-contacto:hover { background: #5a2bd1; color: #fff; }
+
+.contacto-section { background: #ece9ff; padding: 64px 0; margin-top: 48px; border-top: 1px solid #e3e3e3; }
+.contacto-section h2 { color: #5a2bd1; font-size: clamp(28px, 3vw, 36px); margin-bottom: 12px; text-align: center; }
+.contacto-section p { text-align: center; font-size: 18px; margin: 6px 0; }
+.contacto-section a { color: #5a2bd1; font-weight: 600; text-decoration: none; }
+
+
+/* Botón Contacto en cabecera */
+.contact-btn {
+  margin-left: 12px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #5a2bd1;
+  color: #5a2bd1;
+  background: transparent;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-btn:hover { background: #5a2bd1; color: #fff; }
+
+</style>
 </head>
 <body>
   <div class="bg-overlay"></div>
@@ -30,7 +58,7 @@
         <span class="cart-icon" aria-hidden="true">🛒</span>
         <span id="cartCount" class="cart-count">0</span>
       </button>
-    </div>
+    <a href="#contacto" class="contact-btn" title="Contacto">Contacto</a></div>
   </header>
 
   <main class="container">
@@ -42,7 +70,9 @@
         <option value="price-asc">Precio (menor a mayor)</option>
         <option value="price-desc">Precio (mayor a menor)</option>
       </select>
-    </nav>
+    
+  <a class="nav-link" href="#contacto">Contacto</a>
+</nav>
     
     <div id="catChips" class="chips">
       <!-- Chips de categorías generados por JS -->
@@ -91,6 +121,16 @@
     </footer>
   </div>
 </aside>
+
+
+<section id="contacto" class="contacto-section">
+  <div class="container contacto-wrap">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono:</strong> <a href="tel:+34603535204">603 53 52 04</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/Damascandystore" target="_blank" rel="noopener">@Damascandystore</a></p>
+    <p><strong>Correo:</strong> <a href="mailto:Daviddv2512@gmail.com">Daviddv2512@gmail.com</a></p>
+  </div>
+</section>
 
 </body>
 </html>
