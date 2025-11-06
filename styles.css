@@ -8,7 +8,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html{height:100%; scroll-behavior: smooth;}
 body{
   margin:0;
   font-family:'Poppins',system-ui,Arial,Helvetica,sans-serif;
@@ -37,9 +37,18 @@ body{
 
 /* --- Cabecera y Controles --- */
 .topbar{
-  position:sticky; top:0; background:rgba(255,255,255,.85); backdrop-filter: blur(8px);
-  z-index:10; border-bottom:1px solid rgba(0,0,0,.06);
-  display:grid; grid-template-columns: 1fr auto; align-items:center; gap:1rem; padding-top: .75rem; padding-bottom: .75rem;
+  position:sticky; 
+  top:0; 
+  background:rgba(255,255,255,.6); /* Efecto cristal */
+  backdrop-filter: blur(12px);
+  z-index:10; 
+  border-bottom:1px solid rgba(0,0,0,.05);
+  display:grid; 
+  grid-template-columns: 1fr auto; 
+  align-items:center; 
+  gap:1rem; 
+  padding-top: .75rem; 
+  padding-bottom: .75rem;
 }
 
 .brand{
@@ -48,9 +57,11 @@ body{
   gap:1rem;
 }
 .logo{
-  width:72px; aspect-ratio:1; border-radius:50%;
+  width:72px; 
+  aspect-ratio:1; 
+  border-radius:50%;
   box-shadow:0 8px 20px rgba(0,0,0,.12);
-  border:4px solid #fff;
+  border: 2px solid rgba(255,255,255,0.7); /* Borde más suave */
 }
 .titles h1{
   margin:0; font-size:clamp(1.4rem, 2.5vw, 2rem); letter-spacing:.5px;
@@ -58,6 +69,31 @@ body{
 .titles p{
   margin:.2rem 0 0; color:var(--muted); font-size:.95rem;
 }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.contact-btn:hover { 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
 
 .controls{
   display:grid;
@@ -192,12 +228,26 @@ body{
 
 /* --- Estilos del Carrito (Drawer) --- */
 .cart-btn{
-  display:inline-grid; place-items:center; position:relative;
-  width:44px; height:44px; border-radius:12px; border:0; background:#fff; box-shadow:0 6px 16px rgba(0,0,0,.18);
-  cursor:pointer; font-size:20px;
+  display:inline-grid; 
+  place-items:center; 
+  position:relative;
+  width: 48px; 
+  height: 48px;
+  border-radius:999px; /* Coherente con botón de contacto */
+  border:0; 
+  background:#fff; 
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  cursor:pointer; 
+  font-size:20px;
+  transition: transform .15s ease, box-shadow .15s ease;
 }
+.cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
 .cart-count{
-  position:absolute; top:-6px; right:-6px; min-width:22px; height:22px; padding:0 6px;
+  position:absolute; top:-4px; right:-4px; min-width:22px; height:22px; padding:0 6px;
   border-radius:999px; background:var(--brand); color:#fff; font-size:.8rem; font-weight:800;
   display:grid; place-items:center; box-shadow:0 0 0 3px #fff;
 }
@@ -337,6 +387,47 @@ body{
   color: var(--muted);
 }
 
+/* --- Nueva Sección de Contacto --- */
+.contacto-section {
+  width: min(800px, 92vw);
+  margin: 4rem auto 3rem auto;
+  padding: clamp(2rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.contacto-section h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--brand-dark);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: var(--ink);
+}
+.contact-details p {
+  margin: 0;
+}
+.contact-details a {
+  color: var(--brand-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-details a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+
 /* --- Estilos Responsivos --- */
 @media (min-width: 620px){
   .card{ grid-column: span 6 }
@@ -356,38 +447,3 @@ body{
     font-size: 1.2rem; /* Reduce un poco el título para que no se corte */
   }
 }
-
-/* Contacto sección adaptada estilo cristal */
-.contacto-section {
-  width: 90%;
-  max-width: 1200px;
-  margin: 120px auto 80px auto;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(14px);
-  border-radius: 30px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.contacto-section h2 {
-  font-size: clamp(30px, 3vw, 42px);
-  color: #5e33e1;
-  text-align:center;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.contacto-section p {
-  text-align:center;
-  font-size: clamp(17px, 1.1vw, 22px);
-  margin: 8px 0;
-  color: #333;
-}
-
-.contacto-section a {
-  color: #5e33e1;
-  font-weight: 700;
-  text-decoration: none;
-}
-
