@@ -40,6 +40,39 @@ html { scroll-behavior: smooth; }
 }
 .contact-btn:hover { background: #5a2bd1; color: #fff; }
 
+
+/* Contacto button — estilo pill consistente */
+.contact-btn {
+  margin-left: 12px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  color: #5e33e1;
+  font-weight: 700;
+  line-height: 1;
+}
+.contact-btn:hover { transform: translateY(-1px); }
+.contacto-section {
+  background: #e9e3ff;
+  padding: 80px 0;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.contacto-section h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+  color: #5e33e1;
+  text-align:center;
+  margin-bottom: 16px;
+}
+.contacto-section p {
+  text-align:center;
+  font-size: clamp(16px, 1.2vw, 20px);
+  margin: 8px 0;
+}
+.contacto-section a { color: #5e33e1; font-weight: 700; text-decoration: none; }
+
 </style>
 </head>
 <body>
@@ -70,8 +103,6 @@ html { scroll-behavior: smooth; }
         <option value="price-asc">Precio (menor a mayor)</option>
         <option value="price-desc">Precio (mayor a menor)</option>
       </select>
-    
-  <a class="nav-link" href="#contacto">Contacto</a>
 </nav>
     
     <div id="catChips" class="chips">

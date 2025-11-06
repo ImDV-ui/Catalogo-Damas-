@@ -356,3 +356,38 @@ body{
     font-size: 1.2rem; /* Reduce un poco el título para que no se corte */
   }
 }
+
+/* Contacto sección adaptada estilo cristal */
+.contacto-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto 80px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.contacto-section h2 {
+  font-size: clamp(30px, 3vw, 42px);
+  color: #5e33e1;
+  text-align:center;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.contacto-section p {
+  text-align:center;
+  font-size: clamp(17px, 1.1vw, 22px);
+  margin: 8px 0;
+  color: #333;
+}
+
+.contacto-section a {
+  color: #5e33e1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
