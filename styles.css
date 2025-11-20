@@ -1,11 +1,28 @@
 :root {
   --brand: #7c3aed;
-  /* morado */
   --brand-dark: #6b21a8;
   --ink: #0f172a;
   --card: #ffffff;
+  --bg: #f8fafc;
   --muted: #6b7280;
   --ring: rgba(124, 58, 237, .3);
+  --border: rgba(0, 0, 0, .05);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, .08);
+  --shadow-md: 0 10px 26px rgba(0, 0, 0, .10);
+}
+
+/* Dark Theme Variables */
+html.dark {
+  --brand: #a78bfa;
+  --brand-dark: #8b5cf6;
+  --ink: #f1f5f9;
+  --card: #1e293b;
+  --bg: #0f172a;
+  --muted: #94a3b8;
+  --ring: rgba(139, 92, 246, .3);
+  --border: rgba(255, 255, 255, .1);
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, .3);
+  --shadow-md: 0 10px 26px rgba(0, 0, 0, .4);
 }
 
 * {
@@ -22,9 +39,10 @@ body {
   font-family: 'Poppins', system-ui, Arial, Helvetica, sans-serif;
   color: var(--ink);
   line-height: 1.5;
-  background: #f8fafc;
+  background: var(--bg);
   position: relative;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Fondo con imagen adjunta + velo */
@@ -34,6 +52,14 @@ body {
   background: url('assets/bg.jpg') center/cover no-repeat fixed;
   z-index: -1;
   filter: saturate(115%) contrast(110%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+html.dark .bg-overlay {
+  opacity: 0.15;
+  /* Dim background in dark mode */
+  filter: grayscale(40%) contrast(120%);
 }
 
 
@@ -48,16 +74,20 @@ body {
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, .6);
-  /* Efecto cristal */
   backdrop-filter: blur(12px);
   z-index: 10;
-  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid var(--border);
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 1rem;
   padding-top: .75rem;
   padding-bottom: .75rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+html.dark .topbar {
+  background: rgba(15, 23, 42, .6);
 }
 
 .brand {
@@ -98,13 +128,13 @@ body {
   padding: 10px 20px;
   border-radius: 999px;
   border: none;
-  background: #ffffff;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
   color: var(--brand);
   font-weight: 700;
   text-decoration: none;
   line-height: 1;
-  transition: transform .15s ease, box-shadow .15s ease;
+  transition: transform .15s ease, box-shadow .15s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-btn:hover {
@@ -124,12 +154,13 @@ body {
 .controls select {
   appearance: none;
   border: 2px solid transparent;
-  background: #fff;
+  background: var(--card);
+  color: var(--ink);
   border-radius: 16px;
   padding: .8rem 1rem;
   outline: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-  transition: .2s border-color, .2s box-shadow;
+  box-shadow: var(--shadow-sm);
+  transition: .2s border-color, .2s box-shadow, background-color 0.3s ease, color 0.3s ease;
 }
 
 .controls input:focus,
@@ -164,8 +195,8 @@ body {
   background: var(--card);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
-  transition: transform .3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow .3s ease;
+  box-shadow: var(--shadow-md);
+  transition: transform .3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow .3s ease, background-color 0.3s ease;
   display: flex;
   flex-direction: column;
 
@@ -233,7 +264,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3f4f6;
+  background: var(--bg);
   overflow: hidden;
 }
 
@@ -357,9 +388,10 @@ body {
   grid-column: 1 / -1;
   padding: 3rem 1.5rem;
   text-align: center;
+  text-align: center;
   background: var(--card);
   border-radius: 18px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
+  box-shadow: var(--shadow-md);
   margin-top: 1rem;
 }
 
@@ -393,13 +425,25 @@ body {
 .btn {
   display: inline-block;
   border: 0;
-  background: #fff;
+  background: var(--card);
   color: var(--brand-dark);
   padding: .6rem 1rem;
   border-radius: 12px;
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+}
+
+.btn-outline:hover {
+  background: var(--brand);
+  color: #fff;
 }
 
 /* --- Chips de categorías --- */
@@ -426,9 +470,9 @@ body {
 .chip {
   padding: .45rem .8rem;
   border-radius: 999px;
-  background: #fff;
+  background: var(--card);
   border: 2px solid transparent;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
   font-weight: 700;
   font-size: .9rem;
@@ -465,8 +509,14 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, .18)
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  color: var(--brand);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+.to-top:hover {
+  transform: translateY(-3px);
 }
 
 .section-gap {
@@ -484,8 +534,9 @@ body {
   border-radius: 999px;
   /* Coherente con botón de contacto */
   border: 0;
-  background: #fff;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
   font-size: 20px;
   transition: transform .15s ease, box-shadow .15s ease;
@@ -567,7 +618,7 @@ body {
   right: 0;
   width: min(420px, 92vw);
   height: 100%;
-  background: #fff;
+  background: var(--card);
   box-shadow: -12px 0 32px rgba(0, 0, 0, .18);
   transform: translateX(100%);
   transition: transform .25s ease;
@@ -585,12 +636,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, .06);
+  border-bottom: 1px solid var(--border);
 }
 
 .cart-header .icon-btn {
   border: 0;
   background: transparent;
+  color: var(--ink);
   font-size: 1.1rem;
   padding: .2rem;
   cursor: pointer;
@@ -619,7 +671,7 @@ body {
   grid-template-columns: 56px 1fr auto;
   gap: 12px;
   padding: 10px 6px;
-  border-bottom: 1px dashed rgba(0, 0, 0, .06);
+  border-bottom: 1px dashed var(--border);
   align-items: center;
   animation: slideInRight 0.3s ease-out;
 }
@@ -629,7 +681,7 @@ body {
   height: 56px;
   object-fit: cover;
   border-radius: 10px;
-  background: #f6f6f6;
+  background: var(--bg);
   transition: transform 0.3s ease;
 }
 
@@ -655,7 +707,8 @@ body {
 
 .qty-btn {
   border: 0;
-  background: #eee;
+  background: var(--bg);
+  color: var(--ink);
   border-radius: 8px;
   padding: 4px 8px;
   cursor: pointer;
@@ -663,7 +716,7 @@ body {
 }
 
 .qty-btn:hover {
-  background: #ddd;
+  background: var(--border);
   transform: scale(1.15);
 }
 
@@ -687,8 +740,8 @@ body {
 
 .cart-footer {
   padding: 12px 16px;
-  border-top: 1px solid rgba(0, 0, 0, .08);
-  background: #f8fafc;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
 }
 
 .cart-total {
@@ -771,6 +824,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+html.dark .contacto-section {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .contacto-section h2 {

@@ -162,6 +162,8 @@ function renderCart() {
   if (cartItems.length === 0) {
     cartList.innerHTML = `<p style="padding: 2rem 1rem; text-align: center; color: var(--muted);">Tu carrito está vacío.</p>`;
     checkoutBtn.disabled = true;
+    const clearBtn = $("#cartClear");
+    if (clearBtn) clearBtn.remove();
   } else {
     const f = document.createDocumentFragment();
     for (const [id, qty] of cartItems) {
@@ -188,6 +190,23 @@ function renderCart() {
     }
     cartList.appendChild(f);
     checkoutBtn.disabled = false;
+
+    // Add Clear Cart button if not exists
+    if (!$("#cartClear")) {
+      const clearBtn = document.createElement("button");
+      clearBtn.id = "cartClear";
+      clearBtn.className = "btn btn-outline";
+      clearBtn.textContent = "Vaciar carrito";
+      clearBtn.style.marginTop = "0.5rem";
+      clearBtn.onclick = () => {
+        if (confirm("¿Estás seguro de que quieres vaciar el carrito?")) {
+          state.cart = {};
+          updateCartCount();
+          renderCart();
+        }
+      };
+      checkoutBtn.parentNode.insertBefore(clearBtn, checkoutBtn.nextSibling);
+    }
   }
   cartTotalEl.textContent = fmtEUR(total);
 }
@@ -240,19 +259,61 @@ function initCart() {
   $("#cartCheckout").addEventListener("click", () => {
     if (Object.keys(state.cart).length === 0) return;
 
-    const totalText = $("#cartTotal").textContent;
-    alert(`¡Gracias por tu compra!\\n\\nTotal a pagar: ${totalText}\\n\\n(Esto es una demostración, el carrito se vaciará ahora)`);
+    const cartItems = Object.entries(state.cart);
+    let message = "Hola, quiero hacer un pedido:\n\n";
+    let total = 0;
 
-    state.cart = {};
-    updateCartCount();
-    renderCart();
-    setTimeout(() => toggleCart(false), 300);
+    for (const [id, qty] of cartItems) {
+      const product = state.products.find(p => p.id === id);
+      if (product) {
+        const subtotal = (product.price || 0) * qty;
+        total += subtotal;
+        message += `- ${qty}x ${product.name} (${fmtEUR(subtotal)})\n`;
+      }
+    }
+
+    message += `\nTotal: ${fmtEUR(total)}`;
+
+    // Número de teléfono del HTML
+    const phone = "34603535204";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+  });
+}
+
+// --- TEMA (DARK MODE) ---
+function initTheme() {
+  const btn = document.getElementById("darkModeToggle");
+  if (!btn) return;
+
+  const icon = btn.querySelector(".theme-icon");
+  const html = document.documentElement;
+
+  // Cargar preferencia guardada o usar preferencia del sistema
+  const saved = localStorage.getItem("theme");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (saved === "dark" || (!saved && systemDark)) {
+    html.classList.add("dark");
+    icon.textContent = "☀️";
+  } else {
+    html.classList.remove("dark");
+    icon.textContent = "🌙";
+  }
+
+  btn.addEventListener("click", () => {
+    html.classList.toggle("dark");
+    const isDark = html.classList.contains("dark");
+    icon.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 }
 
 // --- INICIALIZACIÓN ---
 
 function boot() {
+  initTheme();
   loadProductData().then(() => {
     // Elimina productos duplicados por nombre antes de renderizar
     const uniqueProducts = [];
@@ -292,6 +353,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const toTopButton = document.getElementById('toTop');
   if (toTopButton) {
+    // Mostrar/ocultar botón según scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        toTopButton.style.opacity = '1';
+        toTopButton.style.pointerEvents = 'auto';
+        toTopButton.style.transform = 'translateY(0)';
+      } else {
+        toTopButton.style.opacity = '0';
+        toTopButton.style.pointerEvents = 'none';
+        toTopButton.style.transform = 'translateY(10px)';
+      }
+    });
+
+    // Estilo inicial
+    toTopButton.style.opacity = '0';
+    toTopButton.style.transition = 'opacity 0.3s, transform 0.3s';
+
     toTopButton.addEventListener('click', (e) => {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
